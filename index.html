@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f2ed">
+<title>Herr Martin · Deutsch</title>
+<style>
+:root{--bg:#f4f2ed;--paper:#fffefa;--ink:#25332f;--muted:#68756f;--line:#e4e1d8;--green:#426b5b;--green2:#e9f0eb;--gold:#c59b55}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100vh}
+main{max-width:980px;margin:auto;padding:56px 24px 40px}
+header{text-align:center;margin-bottom:42px}
+.mark{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:18px;background:var(--green);color:white;font-family:Georgia,serif;font-size:25px;margin-bottom:18px}
+h1{font-family:Georgia,serif;font-size:clamp(2.4rem,6vw,4rem);font-weight:500;letter-spacing:-.04em;margin:0}
+h1 span{color:var(--green)}.subtitle{color:var(--muted);font-size:1.05rem;margin:12px 0 0}
+.intro{max-width:590px;margin:0 auto;color:var(--muted);line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:34px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 8px 24px #293b3010;display:flex;flex-direction:column;min-height:250px}
+.kicker{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:700}
+h2{font-family:Georgia,serif;font-weight:500;font-size:1.55rem;margin:10px 0}
+.desc{color:var(--muted);line-height:1.6;margin:0 0 20px;flex:1}
+label{font-size:.85rem;font-weight:650;margin-bottom:7px}
+input{width:100%;border:1px solid #d5d8d1;border-radius:11px;padding:12px 13px;font:inherit;background:white;color:var(--ink);outline:none}
+input:focus{border-color:var(--green);box-shadow:0 0 0 3px #426b5b20}
+button{margin-top:10px;border:0;border-radius:11px;background:var(--green);color:white;padding:12px 16px;font:inherit;font-weight:650;cursor:pointer}
+button:hover{background:#345647}.error{color:#a33b32;font-size:.86rem;min-height:1.3em;margin:8px 0 0}
+footer{text-align:center;color:var(--muted);font-size:.85rem;margin-top:36px}
+.note{display:inline-block;margin-top:24px;background:var(--green2);color:#385647;padding:10px 14px;border-radius:999px;font-size:.86rem}
+@media(max-width:540px){main{padding:36px 18px 28px}.card{min-height:0}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="mark">H</div>
+  <h1>Herr Martin <span>· Deutsch</span></h1>
+  <p class="subtitle">Willkommen ! Bienvenue dans ton espace de révision.</p>
+  <p class="intro">Retrouve ici les activités pour travailler l’allemand à ton rythme. Choisis ton espace et saisis le mot de passe communiqué par ton enseignant.</p>
+  <div class="note">Lernen · Üben · Fortschritte machen</div>
+</header>
+<section class="grid">
+  <article class="card">
+    <div class="kicker">BTS · Révision</div>
+    <h2>Deutsch im Unternehmen</h2>
+    <p class="desc">Vocabulaire professionnel, compréhension de situations d’entreprise et entraînement aux réunions avec Puma, Volkswagen et Siemens Energy.</p>
+    <form data-target="bts/index.html" data-key="bts">
+      <label for="pw-bts">Mot de passe BTS</label>
+      <input id="pw-bts" type="password" autocomplete="current-password" placeholder="Mot de passe" required>
+      <button type="submit">Accéder à la révision</button>
+      <p class="error" aria-live="polite"></p>
+    </form>
+  </article>
+  <article class="card">
+    <div class="kicker">Séquence · Révision</div>
+    <h2>Deutsche Demokratie</h2>
+    <p class="desc">Révise le système politique allemand, les élections, le fonctionnement des institutions et l’engagement citoyen.</p>
+    <form data-target="demokratie/index.html" data-key="demokratie">
+      <label for="pw-dem">Mot de passe Deutsche Demokratie</label>
+      <input id="pw-dem" type="password" autocomplete="current-password" placeholder="Mot de passe" required>
+      <button type="submit">Accéder à la révision</button>
+      <p class="error" aria-live="polite"></p>
+    </form>
+  </article>
+</section>
+<footer>Herr Martin · Deutsch</footer>
+</main>
+<script>
+const hashes = {"bts": "1d5637a76fb901121355200534369e7b237d66e09d4771862069c604a777849c", "demokratie": "e77f581ee2fcc389331ddac6a4a7a40f59197a0ffb60580865e8df1ace395df8"};
+async function digest(s){
+ const bytes = new TextEncoder().encode(s);
+ const hash = await crypto.subtle.digest("SHA-256", bytes);
+ return [...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,"0")).join("");
+}
+document.querySelectorAll("form[data-target]").forEach(form=>{
+ form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  const key=form.dataset.key, input=form.querySelector("input"), error=form.querySelector(".error");
+  error.textContent="";
+  const value=await digest(input.value);
+  if(value===hashes[key]){
+   sessionStorage.setItem("hm_access_"+key,"ok");
+   location.href=form.dataset.target;
+  }else{
+   error.textContent="Mot de passe incorrect. Vérifie la saisie.";
+   input.focus();input.select();
+  }
+ });
+});
+</script>
+</body></html>
