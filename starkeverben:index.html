@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f6f2">
+<title>Starke Verben – Revision</title>
+<style>
+:root{--bg:#f5f6f2;--paper:#fff;--ink:#202b32;--muted:#77838a;--line:#e4e9e5;--green:#1d6957;--green2:#e6f2ed;--yellow:#f4c95d;--red:#a8473e;--redbg:#fff0ed;--shadow:0 8px 26px #24352b0b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}button,input{font:inherit}button{cursor:pointer}
+header{background:var(--paper);border-bottom:1px solid var(--line)}.top{max-width:1180px;margin:auto;padding:24px 26px 18px;display:flex;align-items:center;justify-content:space-between;gap:20px}.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--green);font-weight:800}.heading h1{font-size:clamp(25px,4vw,36px);line-height:1.1;margin:5px 0 5px;letter-spacing:-.04em}.sub{color:var(--muted);font-size:13px;font-style:italic}.pill{background:var(--green2);color:var(--green);border-radius:99px;padding:7px 12px;font-size:12px;font-weight:700;white-space:nowrap}
+.shell{max-width:1180px;margin:24px auto;padding:0 26px 50px}.tabs{display:flex;gap:8px;border-bottom:1px solid var(--line);margin-bottom:22px;overflow-x:auto}.tab{border:0;background:transparent;color:var(--muted);padding:12px 16px;font-weight:750;border-bottom:3px solid transparent;white-space:nowrap}.tab.active{color:var(--green);border-color:var(--green)}
+.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:22px}.side{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px;height:max-content;box-shadow:var(--shadow)}.side h3{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:0 0 12px}.side button{width:100%;text-align:left;border:0;background:transparent;padding:9px 10px;border-radius:9px;color:#536168;font-weight:600}.side button.active,.side button:hover{background:var(--green2);color:var(--green)}.count{float:right;color:#91a099;font-size:12px}
+main{min-width:0}.toolbar{display:flex;gap:10px;align-items:center;margin-bottom:16px;flex-wrap:wrap}.search{flex:1;min-width:190px;position:relative}.search input{width:100%;border:1px solid var(--line);border-radius:11px;background:white;padding:11px 14px 11px 38px;outline:none}.search:before{content:"⌕";position:absolute;left:14px;top:5px;font-size:23px;color:var(--muted)}.toggle{border:1px solid var(--line);background:#fff;border-radius:10px;padding:10px 13px;color:#526068;font-weight:650}.toggle.on{background:var(--green2);border-color:#cce3d9;color:var(--green)}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.verb{background:white;border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow);min-width:0}.verbhead{display:flex;justify-content:space-between;align-items:start;gap:12px;margin-bottom:12px}.inf{font-weight:800;font-size:18px;letter-spacing:-.02em}.meaning{font-size:12px;color:var(--muted);font-style:italic;margin-top:1px}.tag{font-size:10px;background:#f2f4f1;color:#718078;padding:4px 7px;border-radius:6px;white-space:nowrap}.forms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.form{background:#f7f8f6;border-radius:9px;padding:8px 9px;min-width:0}.form small{display:block;font-size:10px;color:#89938d;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}.form strong{font-size:13px;overflow-wrap:anywhere}.form.perf{background:#edf5f1}.hiddenform{filter:blur(5px);user-select:none}
+.empty{padding:40px;text-align:center;color:var(--muted);background:#fff;border:1px dashed var(--line);border-radius:14px;grid-column:1/-1}
+.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:clamp(18px,4vw,30px);box-shadow:var(--shadow)}.paneltop{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.panel h2{font-size:22px;margin:0;letter-spacing:-.03em}.hint{color:var(--muted);font-size:13px;font-style:italic}.exercise{max-width:760px;margin:auto}.progressline{height:6px;background:#edf0ed;border-radius:10px;overflow:hidden;margin:12px 0 22px}.progressline span{display:block;height:100%;width:0;background:var(--green);transition:width .2s}.question{background:#f6f8f5;border-radius:14px;padding:20px;margin:16px 0}.promptlabel{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:800}.prompt{font-size:clamp(24px,4vw,34px);font-weight:800;margin:4px 0 0;letter-spacing:-.04em}.translation{font-style:italic;color:var(--muted);font-size:13px}.answerrow{display:flex;gap:9px}.answerrow input{flex:1;min-width:0;border:1px solid #dce4de;border-radius:11px;padding:13px 14px;outline:none}.answerrow input:focus{border-color:var(--green);box-shadow:0 0 0 3px #1d695719}.primary{border:0;background:var(--green);color:white;padding:12px 18px;border-radius:10px;font-weight:750}.secondary{border:1px solid var(--line);background:white;color:#536168;padding:11px 15px;border-radius:10px;font-weight:700}.feedback{margin-top:12px;border-radius:10px;padding:12px 14px;font-size:14px}.good{background:var(--green2);color:#185b49}.bad{background:var(--redbg);color:var(--red)}.muted{color:var(--muted)}.actions{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:18px;flex-wrap:wrap}.score{font-size:13px;color:var(--muted)}.selectrow{display:flex;gap:8px;flex-wrap:wrap}.choice{border:1px solid var(--line);background:white;border-radius:9px;padding:8px 12px;color:#526068;font-weight:650}.choice.active{background:var(--green2);border-color:#c5dfd3;color:var(--green)}.result{text-align:center;padding:30px 10px}.result .big{font-size:46px;font-weight:850;color:var(--green);letter-spacing:-.05em}.keys{display:flex;gap:6px;margin-top:9px}.keys button{min-width:42px}.review{list-style:none;padding:0;margin:20px 0;text-align:left}.review li{border-radius:10px;padding:10px 14px;margin-bottom:7px}.review b,.review span{display:block}button:focus-visible{outline:3px solid var(--yellow);outline-offset:1px}
+.vb,.vc{border-radius:3px;padding:0 1px;font-weight:850;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:2px}.vb{background:#e0ebff;color:#1b4a96;text-decoration-style:dotted}.vc{background:#ffe2b8;color:#8f3b00}.legend{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px;font-size:13px}.sentence{font-size:20px;line-height:2.4;margin:8px 0}.sentence input{width:9.5em;max-width:100%;border:0;border-bottom:2px solid var(--green);border-radius:6px 6px 0 0;background:#fff;padding:3px 8px}
+.footer{max-width:1180px;margin:0 auto;padding:0 26px 24px;color:#98a29c;font-size:11px;display:flex;justify-content:flex-end}
+@media(max-width:760px){.top{padding:20px 17px 16px}.shell{padding:0 14px 35px;margin:18px auto}.layout{grid-template-columns:1fr;gap:12px}.side{padding:10px;display:flex;gap:6px;overflow-x:auto}.side h3{display:none}.side button{width:auto;white-space:nowrap;padding:8px 11px}.cards{grid-template-columns:1fr}.toolbar{gap:7px}.toggle{padding:9px 10px}.footer{padding:0 16px 20px}.answerrow{flex-direction:column}.answerrow .primary{width:100%}}
+.toolbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:8px 0;margin-bottom:8px}.legend[hidden]{display:none}#cards.nomarks :is(.vb,.vc){background:none!important;color:inherit!important;font-weight:inherit!important;text-decoration:none!important;padding:0!important}.headtools{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+html[data-theme=dark]{color-scheme:dark;--bg:#131a1d;--paper:#1c2529;--ink:#e6ecea;--muted:#a3b0ac;--line:#334046;--green:#6fcfb2;--green2:#1f3d35;--red:#ffaca1;--redbg:#46272a;--shadow:none}
+html[data-theme=dark] :is(.verb,.panel,.empty,.search input,.toggle:not(.on),.choice:not(.active),.secondary,.answerrow input,.sentence input){background:var(--paper);color:var(--ink);border-color:var(--line)}
+html[data-theme=dark] :is(.form,.question,.tag,.progressline){background:#263136}html[data-theme=dark] .form.perf{background:#213a35}
+html[data-theme=dark] :is(.form small,.tag,.count,.footer,.side button:not(.active)){color:var(--muted)}
+html[data-theme=dark] .sentence input{border-bottom-color:var(--green)}html[data-theme=dark] .good{color:#b5ead9}html[data-theme=dark] .primary{color:#10211c}
+html[data-theme=dark] .vb{background:#243e6b;color:#cfe0ff}html[data-theme=dark] .vc{background:#6b3d0c;color:#ffe0b3}
+.footer{justify-content:center;font-size:18px;font-weight:700}
+</style>
+</head>
+<body>
+<header><div class="top"><div class="heading"><div class="eyebrow">Deutsch · Grammatik</div><h1>Starke Verben</h1><div class="sub">Réviser les verbes forts</div></div><div class="headtools"><div class="pill" id="totalPill">84 Verben</div><button class="toggle" id="themeBtn"></button></div></div></header>
+<div class="shell">
+<nav class="tabs" aria-label="Navigation principale">
+<button class="tab active" data-tab="lernen">Lernen <span class="sub">· consulter</span></button>
+<button class="tab" data-tab="ueben">Üben <span class="sub">· travail ciblé</span></button>
+<button class="tab" data-tab="training">Training <span class="sub">· examen blanc</span></button>
+<button class="tab" data-tab="kontext">Kontext <span class="sub">· en phrases</span></button>
+</nav>
+<section id="lernen" class="view">
+<div class="layout"><aside class="side"><h3>Wortschatz</h3><button class="active" data-filter="all">Tous les verbes <span class="count" id="countAll"></span></button><button data-filter="a">Verbes en A</button><button data-filter="e">Verbes en E</button><button data-filter="other">Autres verbes</button><button data-filter="m">Verbes mixtes (Mischverben)</button></aside>
+<main><div class="toolbar"><div class="search"><input id="search" type="search" placeholder="Rechercher un verbe ou une traduction…" autocomplete="off"></div><button class="toggle" id="hideBtn">Masquer les formes</button><button class="toggle" id="marksBtn">Masquer les couleurs</button></div><div class="legend"><span><span class="vb" translate="no">e</span> voyelle de l’infinitif</span><span><span class="vc" translate="no">a</span> voyelle qui change</span></div><div id="cards" class="cards"></div></main></div>
+</section>
+<section id="ueben" class="view" hidden><div class="panel exercise"><div class="paneltop"><div><h2>Gezieltes Üben</h2><div class="hint">Choisis un temps. Correction après chaque réponse.</div></div><span class="pill" id="practiceCount">1 / 10</span></div><div class="selectrow" id="practiceModes"><button class="choice active" data-mode="present">Präsens</button><button class="choice" data-mode="preterite">Präteritum</button><button class="choice" data-mode="perfect">Perfekt</button><button class="choice" data-mode="all">Mix</button></div><div class="progressline"><span id="practiceProgress"></span></div><div id="practiceArea"></div></div></section>
+<section id="training" class="view" hidden><div class="panel exercise"><div class="paneltop"><div><h2>Prüfungssimulation</h2><div class="hint">Sans traduction. Correction à la fin.</div></div><span class="pill" id="trainingCount">1 / 10</span></div><div class="progressline"><span id="trainingProgress"></span></div><div id="trainingArea"></div></div></section>
+<section id="kontext" class="view" hidden><div class="panel exercise"><div class="paneltop"><div><h2>Verben im Satz</h2><div class="hint">Complète la phrase avec le verbe, au temps indiqué.</div></div><span class="pill" id="kontextCount">1 / 10</span></div><div class="progressline"><span id="kontextProgress"></span></div><div id="kontextArea"></div></div></section>
+</div>
+<footer class="footer"><span>Herr Martin</span></footer>
+<script>
+const verbs = [{"inf": "an/bieten", "present": "er bietet an", "preterite": "er bot an", "perfect": "er hat angeboten", "meaning": "offrir, proposer"}, {"inf": "an/fangen", "present": "er fängt an", "preterite": "er fing an", "perfect": "er hat angefangen", "meaning": "commencer"}, {"inf": "an/kommen", "present": "er kommt an", "preterite": "er kam an", "perfect": "er ist angekommen", "meaning": "arriver"}, {"inf": "an/rufen", "present": "er ruft an", "preterite": "er rief an", "perfect": "er hat angerufen", "meaning": "appeler (au téléphone)"}, {"inf": "an/ziehen", "present": "er zieht an", "preterite": "er zog an", "perfect": "er hat angezogen", "meaning": "mettre (un habit)"}, {"inf": "aus/geben", "present": "er gibt aus", "preterite": "er gab aus", "perfect": "er hat ausgegeben", "meaning": "dépenser"}, {"inf": "aus/sehen", "present": "er sieht aus", "preterite": "er sah aus", "perfect": "er hat ausgesehen", "meaning": "avoir l’air, sembler"}, {"inf": "beginnen", "present": "er beginnt", "preterite": "er begann", "perfect": "er hat begonnen", "meaning": "commencer"}, {"inf": "bekommen", "present": "er bekommt", "preterite": "er bekam", "perfect": "er hat bekommen", "meaning": "recevoir, obtenir"}, {"inf": "begreifen", "present": "er begreift", "preterite": "er begriff", "perfect": "er hat begriffen", "meaning": "comprendre, saisir"}, {"inf": "beschließen", "present": "er beschließt", "preterite": "er beschloss", "perfect": "er hat beschlossen", "meaning": "décider"}, {"inf": "beschreiben", "present": "er beschreibt", "preterite": "er beschrieb", "perfect": "er hat beschrieben", "meaning": "décrire"}, {"inf": "bleiben", "present": "er bleibt", "preterite": "er blieb", "perfect": "er ist geblieben", "meaning": "rester"}, {"inf": "brechen", "present": "er bricht", "preterite": "er brach", "perfect": "er hat gebrochen", "meaning": "casser"}, {"inf": "bringen", "present": "er bringt", "preterite": "er brachte", "perfect": "er hat gebracht", "meaning": "apporter"}, {"inf": "denken", "present": "er denkt", "preterite": "er dachte", "perfect": "er hat gedacht", "meaning": "penser"}, {"inf": "ein/laden", "present": "er lädt ein", "preterite": "er lud ein", "perfect": "er hat eingeladen", "meaning": "inviter"}, {"inf": "ein/schlafen", "present": "er schläft ein", "preterite": "er schlief ein", "perfect": "er ist eingeschlafen", "meaning": "s’endormir"}, {"inf": "empfangen", "present": "er empfängt", "preterite": "er empfing", "perfect": "er hat empfangen", "meaning": "recevoir"}, {"inf": "empfehlen", "present": "er empfiehlt", "preterite": "er empfahl", "perfect": "er hat empfohlen", "meaning": "recommander"}, {"inf": "erhalten", "present": "er erhält", "preterite": "er erhielt", "perfect": "er hat erhalten", "meaning": "obtenir"}, {"inf": "ertragen", "present": "er erträgt", "preterite": "er ertrug", "perfect": "er hat ertragen", "meaning": "supporter"}, {"inf": "essen", "present": "er isst", "preterite": "er aß", "perfect": "er hat gegessen", "meaning": "manger"}, {"inf": "fahren", "present": "er fährt", "preterite": "er fuhr", "perfect": "er ist gefahren", "meaning": "aller (en véhicule)"}, {"inf": "fallen", "present": "er fällt", "preterite": "er fiel", "perfect": "er ist gefallen", "meaning": "tomber"}, {"inf": "fangen", "present": "er fängt", "preterite": "er fing", "perfect": "er hat gefangen", "meaning": "attraper"}, {"inf": "fern/sehen", "present": "er sieht fern", "preterite": "er sah fern", "perfect": "er hat ferngesehen", "meaning": "regarder la télévision"}, {"inf": "finden", "present": "er findet", "preterite": "er fand", "perfect": "er hat gefunden", "meaning": "trouver"}, {"inf": "fliegen", "present": "er fliegt", "preterite": "er flog", "perfect": "er ist geflogen", "meaning": "voler"}, {"inf": "fliehen", "present": "er flieht", "preterite": "er floh", "perfect": "er ist geflohen", "meaning": "fuir"}, {"inf": "fressen", "present": "er frisst", "preterite": "er fraß", "perfect": "er hat gefressen", "meaning": "manger (pour un animal)"}, {"inf": "geben", "present": "er gibt", "preterite": "er gab", "perfect": "er hat gegeben", "meaning": "donner"}, {"inf": "gehen", "present": "er geht", "preterite": "er ging", "perfect": "er ist gegangen", "meaning": "aller"}, {"inf": "gefallen", "present": "er gefällt", "preterite": "er gefiel", "perfect": "er hat gefallen", "meaning": "plaire"}, {"inf": "gewinnen", "present": "er gewinnt", "preterite": "er gewann", "perfect": "er hat gewonnen", "meaning": "gagner"}, {"inf": "halten", "present": "er hält", "preterite": "er hielt", "perfect": "er hat gehalten", "meaning": "tenir"}, {"inf": "helfen", "present": "er hilft", "preterite": "er half", "perfect": "er hat geholfen", "meaning": "aider"}, {"inf": "kennen", "present": "er kennt", "preterite": "er kannte", "perfect": "er hat gekannt", "meaning": "connaître"}, {"inf": "kommen", "present": "er kommt", "preterite": "er kam", "perfect": "er ist gekommen", "meaning": "venir"}, {"inf": "lassen", "present": "er lässt", "preterite": "er ließ", "perfect": "er hat gelassen", "meaning": "laisser"}, {"inf": "laufen", "present": "er läuft", "preterite": "er lief", "perfect": "er ist gelaufen", "meaning": "courir"}, {"inf": "leiden", "present": "er leidet", "preterite": "er litt", "perfect": "er hat gelitten", "meaning": "souffrir"}, {"inf": "lesen", "present": "er liest", "preterite": "er las", "perfect": "er hat gelesen", "meaning": "lire"}, {"inf": "mit/helfen", "present": "er hilft mit", "preterite": "er half mit", "perfect": "er hat mitgeholfen", "meaning": "donner un coup de main"}, {"inf": "mit/nehmen", "present": "er nimmt mit", "preterite": "er nahm mit", "perfect": "er hat mitgenommen", "meaning": "emporter"}, {"inf": "nehmen", "present": "er nimmt", "preterite": "er nahm", "perfect": "er hat genommen", "meaning": "prendre"}, {"inf": "reiten", "present": "er reitet", "preterite": "er ritt", "perfect": "er ist geritten", "meaning": "faire du cheval"}, {"inf": "scheinen", "present": "er scheint", "preterite": "er schien", "perfect": "er hat geschienen", "meaning": "sembler / briller"}, {"inf": "schlafen", "present": "er schläft", "preterite": "er schlief", "perfect": "er hat geschlafen", "meaning": "dormir"}, {"inf": "schlagen", "present": "er schlägt", "preterite": "er schlug", "perfect": "er hat geschlagen", "meaning": "frapper"}, {"inf": "schließen", "present": "er schließt", "preterite": "er schloss", "perfect": "er hat geschlossen", "meaning": "fermer"}, {"inf": "schreiben", "present": "er schreibt", "preterite": "er schrieb", "perfect": "er hat geschrieben", "meaning": "écrire"}, {"inf": "schreien", "present": "er schreit", "preterite": "er schrie", "perfect": "er hat geschrien", "meaning": "crier"}, {"inf": "schwimmen", "present": "er schwimmt", "preterite": "er schwamm", "perfect": "er hat geschwommen", "meaning": "nager"}, {"inf": "sehen", "present": "er sieht", "preterite": "er sah", "perfect": "er hat gesehen", "meaning": "voir"}, {"inf": "sein", "present": "er ist", "preterite": "er war", "perfect": "er ist gewesen", "meaning": "être"}, {"inf": "singen", "present": "er singt", "preterite": "er sang", "perfect": "er hat gesungen", "meaning": "chanter"}, {"inf": "sitzen", "present": "er sitzt", "preterite": "er saß", "perfect": "er hat gesessen", "meaning": "être assis"}, {"inf": "sprechen", "present": "er spricht", "preterite": "er sprach", "perfect": "er hat gesprochen", "meaning": "parler"}, {"inf": "stehen", "present": "er steht", "preterite": "er stand", "perfect": "er hat gestanden", "meaning": "être debout"}, {"inf": "steigen", "present": "er steigt", "preterite": "er stieg", "perfect": "er ist gestiegen", "meaning": "monter"}, {"inf": "sterben", "present": "er stirbt", "preterite": "er starb", "perfect": "er ist gestorben", "meaning": "mourir"}, {"inf": "sich streiten", "present": "er streitet sich", "preterite": "er stritt sich", "perfect": "er hat sich gestritten", "meaning": "se disputer"}, {"inf": "tragen", "present": "er trägt", "preterite": "er trug", "perfect": "er hat getragen", "meaning": "porter"}, {"inf": "treffen", "present": "er trifft", "preterite": "er traf", "perfect": "er hat getroffen", "meaning": "rencontrer / atteindre"}, {"inf": "treiben", "present": "er treibt", "preterite": "er trieb", "perfect": "er hat getrieben", "meaning": "pratiquer / pousser"}, {"inf": "trinken", "present": "er trinkt", "preterite": "er trank", "perfect": "er hat getrunken", "meaning": "boire"}, {"inf": "tun", "present": "er tut", "preterite": "er tat", "perfect": "er hat getan", "meaning": "faire"}, {"inf": "übertreiben", "present": "er übertreibt", "preterite": "er übertrieb", "perfect": "er hat übertrieben", "meaning": "exagérer"}, {"inf": "verbieten", "present": "er verbietet", "preterite": "er verbot", "perfect": "er hat verboten", "meaning": "interdire"}, {"inf": "verbringen", "present": "er verbringt", "preterite": "er verbrachte", "perfect": "er hat verbracht", "meaning": "passer (du temps)"}, {"inf": "vergessen", "present": "er vergisst", "preterite": "er vergaß", "perfect": "er hat vergessen", "meaning": "oublier"}, {"inf": "vergleichen", "present": "er vergleicht", "preterite": "er verglich", "perfect": "er hat verglichen", "meaning": "comparer"}, {"inf": "verlassen", "present": "er verlässt", "preterite": "er verließ", "perfect": "er hat verlassen", "meaning": "quitter, abandonner"}, {"inf": "verlieren", "present": "er verliert", "preterite": "er verlor", "perfect": "er hat verloren", "meaning": "perdre"}, {"inf": "versprechen", "present": "er verspricht", "preterite": "er versprach", "perfect": "er hat versprochen", "meaning": "promettre"}, {"inf": "verschwinden", "present": "er verschwindet", "preterite": "er verschwand", "perfect": "er ist verschwunden", "meaning": "disparaître"}, {"inf": "verstehen", "present": "er versteht", "preterite": "er verstand", "perfect": "er hat verstanden", "meaning": "comprendre"}, {"inf": "vor/schlagen", "present": "er schlägt vor", "preterite": "er schlug vor", "perfect": "er hat vorgeschlagen", "meaning": "proposer"}, {"inf": "werden", "present": "er wird", "preterite": "er wurde", "perfect": "er ist geworden", "meaning": "devenir"}, {"inf": "werfen", "present": "er wirft", "preterite": "er warf", "perfect": "er hat geworfen", "meaning": "jeter"}, {"inf": "wissen", "present": "er weiß", "preterite": "er wusste", "perfect": "er hat gewusst", "meaning": "savoir"}, {"inf": "ziehen", "present": "er zieht", "preterite": "er zog", "perfect": "er hat gezogen", "meaning": "tirer"}, {"inf": "zwingen", "present": "er zwingt", "preterite": "er zwang", "perfect": "er hat gezwungen", "meaning": "forcer, obliger"}];
+const $ = s => document.querySelector(s);
+const norm = s => (s||"").toLocaleLowerCase("de-DE").trim().replace(/\s+/g," ");
+let currentFilter="all", hidden=false, query="";
+function category(v){let x=v.inf.toLowerCase();if(["bringen","verbringen","denken","kennen","wissen"].includes(x))return "m";if(["fangen","an/fangen","empfangen","fallen","gefallen","halten","erhalten","lassen","verlassen","laufen","schlafen","ein/schlafen","ein/laden","tragen","ertragen","fahren","schlagen","vor/schlagen"].includes(x))return "a";if(["geben","aus/geben","sehen","aus/sehen","fern/sehen","essen","fressen","vergessen","lesen","brechen","empfehlen","helfen","mit/helfen","nehmen","mit/nehmen","sprechen","versprechen","sterben","treffen","werfen"].includes(x))return "e";return "other"}
+function lastVowel(w){return [...w.matchAll(/ei|ie|au|eu|ee|[aeiouäöü]/g)].pop()}
+const infWord=v=>v.inf.split(/[\/ ]/).pop();
+const baseVowel=v=>lastVowel(infWord(v).replace(/e?n$/,""));
+function mark(text,start,m,cls){const i=start+m.index;return text.slice(0,i)+`<span class="${cls}">${m[0]}</span>`+text.slice(i+m[0].length)}
+function markInf(v){return v.inf==="sein"?v.inf:mark(v.inf,v.inf.length-infWord(v).length,baseVowel(v),"vb")}
+function markForm(v,field){
+ if(v.inf==="sein")return v[field];
+ const text=v[field],words=text.split(" "),word=field==="perfect"?words[words.length-1]:words[1];
+ const stem=word.replace(field==="present"?/et$/:field==="preterite"?/(te|de)$/:/(?<!i)en$|n$/,"");
+ const m=lastVowel(stem);
+ return m&&m[0]!==baseVowel(v)[0]?mark(text,text.lastIndexOf(word),m,"vc"):text;
+}
+function renderCards(){
+ let list=verbs.filter(v=>(currentFilter==="all"||category(v)===currentFilter)&&(!query||[v.inf,v.meaning,v.present,v.preterite,v.perfect].join(" ").toLocaleLowerCase("de").includes(query)));
+ $("#countAll").textContent=verbs.length;
+ $("#cards").innerHTML=list.length?list.map(v=>`<article class="verb"><div class="verbhead"><div><div class="inf" translate="no">${markInf(v)}</div><div class="meaning">${v.meaning}</div></div><span class="tag">${category(v)==="a"?"A":category(v)==="e"?"E":category(v)==="m"?"Mixte":"Autres"}</span></div><div class="forms">${formCell("Präsens",markForm(v,"present"))}${formCell("Präteritum",markForm(v,"preterite"))}${formCell("Perfekt",markForm(v,"perfect"),true)}</div></article>`).join(""):`<div class="empty">Aucun verbe trouvé.</div>`;
+}
+function formCell(label,value,perf=false){return `<div class="form ${perf?"perf":""}"><small>${label}</small><strong translate="no" class="${hidden?"hiddenform":""}">${value}</strong></div>`}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x===b));document.querySelectorAll(".view").forEach(x=>x.hidden=x.id!==b.dataset.tab);});
+document.querySelectorAll("[data-filter]").forEach(b=>b.onclick=()=>{currentFilter=b.dataset.filter;document.querySelectorAll("[data-filter]").forEach(x=>x.classList.toggle("active",x===b));renderCards()});
+$("#search").addEventListener("input",e=>{query=norm(e.target.value);renderCards()});
+$("#hideBtn").onclick=()=>{hidden=!hidden;$("#hideBtn").textContent=hidden?"Afficher les formes":"Masquer les formes";$("#hideBtn").classList.toggle("on",hidden);renderCards()};
+let practice={mode:"present",n:0,score:0,items:[]};
+let training={n:0,items:[],answers:[]};
+const fields=["present","preterite","perfect"], labels={present:"Präsens",preterite:"Präteritum",perfect:"Perfekt"};
+function shuffle(a){const r=[...a];for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[r[i],r[j]]=[r[j],r[i]]}return r}
+const clean=s=>norm(s).replace(/[.!]+$/,"").replace(/^er /,"");
+const isRight=(answer,item)=>clean(answer)===clean(item.v[item.field]);
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function pick(mode){
+ let mix=shuffle([0,1,2,3,4,5,6,7,8,9].map(i=>fields[i%3]));
+ return shuffle(verbs).slice(0,10).map((v,i)=>({v,field:mode==="all"?mix[i]:mode}));
+}
+function setProgress(name,done){
+ $("#"+name+"Progress").style.width=done*10+"%";
+ $("#"+name+"Count").textContent=`${Math.min(done+1,10)} / 10`;
+}
+function questionHtml(item,sub){
+ return `<div class="question"><div class="promptlabel">${labels[item.field]}</div><div class="prompt" translate="no">${item.v.inf}</div>${sub?`<div class="translation">${sub}</div>`:""}</div><div class="answerrow"><input type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="er …" aria-label="Forme verbale"><button class="primary check"></button></div><div class="keys">${["ä","ö","ü","ß"].map(c=>`<button type="button" class="secondary">${c}</button>`).join("")}</div>`;
+}
+function bindKeys(area){
+ const input=area.querySelector("input");
+ area.querySelectorAll(".keys button").forEach(b=>b.onclick=()=>{if(input.readOnly)return;input.setRangeText(b.textContent,input.selectionStart,input.selectionEnd,"end");input.focus()});
+ return input;
+}
+function showPractice(){
+ const area=$("#practiceArea");
+ if(practice.n>=10){
+  setProgress("practice",10);
+  area.innerHTML=`<div class="result"><div class="big">${practice.score} / 10</div><h2>${practice.score>=8?"Sehr gut!":"Weiter üben!"}</h2><p class="hint">Réussites au premier essai.</p><button class="primary again">Recommencer une série</button></div>`;
+  area.querySelector(".again").onclick=restartPractice;return;
+ }
+ setProgress("practice",practice.n);
+ const item=practice.items[practice.n];
+ area.innerHTML=questionHtml(item,item.v.meaning)+`<div class="fb" aria-live="polite"></div><div class="actions"><span class="score"></span><span><button class="secondary retry" hidden>Réessayer</button> <button class="secondary next" hidden>${practice.n===9?"Voir le résultat":"Question suivante"}</button></span></div>`;
+ const q=s=>area.querySelector(s), input=bindKeys(area), score=()=>q(".score").textContent=`Score : ${practice.score}`;
+ let checked=false;
+ q(".check").textContent="Vérifier";score();
+ const check=()=>{
+  if(checked||!input.value.trim())return;
+  checked=true;input.readOnly=true;
+  const ok=isRight(input.value,item);
+  if(ok&&!item.tried)practice.score++;
+  item.tried=true;score();
+  q(".fb").innerHTML=`<div class="feedback ${ok?"good":"bad"}">${ok?"Richtig!":`Noch nicht. Réponse : <b translate="no">${item.v[item.field]}</b>`}</div>`;
+  q(".check").disabled=true;q(".next").hidden=false;q(".retry").hidden=ok;
+ };
+ q(".check").onclick=check;
+ q(".retry").onclick=()=>{showPractice();$("#practiceArea input").focus()};
+ q(".next").onclick=()=>{practice.n++;showPractice();$("#practiceArea input")?.focus()};
+ input.onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();checked?q(".next").click():check()}};
+}
+function showTraining(){
+ const area=$("#trainingArea");
+ if(training.n>=10){
+  setProgress("training",10);
+  const results=training.items.map((item,i)=>({item,answer:training.answers[i],ok:isRight(training.answers[i],item)}));
+  const total=results.filter(r=>r.ok).length;
+  area.innerHTML=`<div class="result"><div class="big">${total} / 10</div><h2>${total>=8?"Sehr gut!":"Weiter üben!"}</h2><ul class="review">${results.map(r=>`<li class="${r.ok?"good":"bad"}"><b translate="no">${r.item.v.inf} (${labels[r.item.field]})</b><span>Ta réponse : ${esc(r.answer)||"aucune"}${r.ok?" ✓":""}</span>${r.ok?"":`<span>Correction : <span translate="no">${r.item.v[r.item.field]}</span></span>`}</li>`).join("")}</ul><button class="primary again">Nouvelle simulation</button></div>`;
+  area.querySelector(".again").onclick=restartTraining;return;
+ }
+ setProgress("training",training.n);
+ area.innerHTML=questionHtml(training.items[training.n],"");
+ const input=bindKeys(area), button=area.querySelector(".check");
+ button.textContent=training.n===9?"Terminer":"Valider";
+ const submit=()=>{training.answers.push(input.value.trim());training.n++;showTraining();$("#trainingArea input")?.focus()};
+ button.onclick=submit;
+ input.onkeydown=e=>{if(e.key==="Enter"&&!e.repeat&&input.value.trim()){e.preventDefault();submit()}};
+}
+function restartPractice(){practice.n=0;practice.score=0;practice.items=pick(practice.mode);showPractice()}
+function restartTraining(){training={n:0,items:pick("all"),answers:[]};showTraining()}
+document.querySelectorAll("#practiceModes .choice").forEach(b=>b.onclick=()=>{document.querySelectorAll("#practiceModes .choice").forEach(x=>x.classList.toggle("active",x===b));practice.mode=b.dataset.mode;restartPractice()});
+restartPractice();
+restartTraining();
+const sentences=`present|fahren|Jeden Morgen [fährt] er mit dem Bus zur Schule.
+present|essen|Mein Bruder [isst] gern Pizza.
+present|lesen|Sie [liest] am Abend ein Buch.
+present|helfen|Er [hilft] seiner Mutter in der Küche.
+present|fern/sehen|Am Wochenende [sieht] er lange [fern].
+present|schlafen|Das Baby [schläft] schon.
+present|an/fangen|Der Unterricht [fängt] um acht Uhr [an].
+present|nehmen|Sie [nimmt] den Zug nach Berlin.
+present|sprechen|Er [spricht] sehr gut Deutsch.
+present|ein/laden|Lena [lädt] ihre Freunde zur Party [ein].
+preterite|gehen|Gestern [ging] er ins Kino.
+preterite|kommen|Der Bus [kam] zu spät.
+preterite|finden|Sie [fand] den Film sehr spannend.
+preterite|schreiben|Er [schrieb] seiner Oma eine Karte.
+preterite|sein|Letztes Jahr [war] sie in Hamburg.
+preterite|trinken|Nach dem Sport [trank] er viel Wasser.
+preterite|an/rufen|Am Abend [rief] sie ihre Freundin [an].
+preterite|verlieren|Unser Team [verlor] das Spiel.
+preterite|bringen|Der Kellner [brachte] die Suppe.
+preterite|bleiben|Wegen des Regens [blieb] er zu Hause.
+perfect|geben|Der Lehrer [hat] uns viele Hausaufgaben [gegeben].
+perfect|an/kommen|Der Zug [ist] pünktlich [angekommen].
+perfect|vergessen|Sie [hat] ihr Handy [vergessen].
+perfect|schwimmen|Er [ist] im See [geschwommen].
+perfect|treffen|Sie [hat] gestern ihre Freunde [getroffen].
+perfect|gewinnen|Er [hat] den ersten Preis [gewonnen].
+perfect|ein/schlafen|Das Kind [ist] schnell [eingeschlafen].
+perfect|beginnen|Der Film [hat] schon [begonnen].
+perfect|fliegen|Sie [ist] nach Wien [geflogen].
+perfect|singen|Er [hat] ein schönes Lied [gesungen].
+present|geben|Die Lehrerin [gibt] uns heute keine Hausaufgaben.
+present|laufen|Er [läuft] jeden Samstag im Park.
+present|tragen|Sie [trägt] heute eine blaue Jacke.
+present|empfehlen|Der Kellner [empfiehlt] den Fisch.
+present|werden|Meine Schwester [wird] bald achtzehn.
+preterite|stehen|Er [stand] eine Stunde an der Haltestelle.
+preterite|nehmen|Sie [nahm] ein Taxi zum Bahnhof.
+preterite|beschreiben|Er [beschrieb] der Polizei den Dieb.
+preterite|versprechen|Sie [versprach], pünktlich zu sein.
+perfect|an/ziehen|Er [hat] seinen Mantel [angezogen].
+perfect|bekommen|Sie [hat] ein Geschenk [bekommen].
+perfect|sitzen|Er [hat] den ganzen Tag am Computer [gesessen].
+perfect|brechen|Sie [hat] sich beim Skifahren das Bein [gebrochen].
+present|?trinken|Zum Frühstück [trinkt~nimmt] er immer eine Tasse Tee.
+present|?lesen|Jeden Morgen [liest] er die Zeitung.
+present|?schlafen|Er ist sehr müde und [schläft] zehn Stunden.
+present|?wissen|Sie [weiß~kennt] die richtige Antwort.
+present|?helfen|Wenn ich ein Problem habe, [hilft] er mir immer.
+preterite|?gewinnen|Unsere Mannschaft war die beste und [gewann] das Finale.
+preterite|?sterben|Der alte König war sehr krank und [starb] im Winter.
+preterite|?finden|Er suchte lange und [fand] endlich seinen Schlüssel.
+preterite|?schwimmen|Das Wasser war warm und er [schwamm] bis zur Insel.
+perfect|?vergessen|Oh nein! Er [hat] seine Hausaufgaben zu Hause [vergessen~gelassen].
+perfect|?essen|Er hatte großen Hunger und [hat] drei Teller Nudeln [gegessen].
+perfect|?fliegen|Sie [ist] mit dem Flugzeug nach Rom [geflogen~gekommen].
+perfect|?singen|Beim Konzert [hat] sie drei Lieder [gesungen].`.split("\n").map(l=>l.split("|"));
+let kontext={n:0,score:0,items:[]};
+function showKontext(){
+ const area=$("#kontextArea");
+ setProgress("kontext",kontext.n);
+ if(kontext.n>=10){
+  area.innerHTML=`<div class="result"><div class="big">${kontext.score} / 10</div><h2>${kontext.score>=8?"Sehr gut!":"Weiter üben!"}</h2><button class="primary again">Nouvelles phrases</button></div>`;
+  area.querySelector(".again").onclick=restartKontext;return;
+ }
+ const [field,inf,text]=kontext.items[kontext.n], answers=[];
+ const html=text.replace(/\[(.+?)\]/g,(_,a)=>{answers.push(a.split("~"));return `<input type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="Mot manquant ${answers.length}">`});
+ area.innerHTML=`<div class="question"><div class="promptlabel"><span translate="no">${inf[0]==="?"?"Quel verbe ?":inf}</span> · ${labels[field]}</div><p class="sentence" translate="no">${html}</p></div><div class="keys">${["ä","ö","ü","ß"].map(c=>`<button type="button" class="secondary">${c}</button>`).join("")}</div><div class="fb" aria-live="polite"></div><div class="actions"><span class="score">Score : ${kontext.score}</span><button class="primary go">Vérifier</button></div>`;
+ const inputs=[...area.querySelectorAll("input")], go=area.querySelector(".go");
+ let active=inputs[0], checked=false;
+ inputs.forEach(i=>{i.onfocus=()=>active=i;i.onkeydown=e=>{if(e.key==="Enter"&&!e.repeat){e.preventDefault();go.click()}}});
+ area.querySelectorAll(".keys button").forEach(b=>b.onclick=()=>{if(checked)return;active.setRangeText(b.textContent,active.selectionStart,active.selectionEnd,"end");active.focus()});
+ go.onclick=()=>{
+  if(checked){kontext.n++;showKontext();$("#kontextArea input")?.focus();return}
+  if(inputs.some(i=>!i.value.trim()))return;
+  checked=true;
+  const ok=inputs.every((i,k)=>answers[k].some(a=>norm(i.value)===norm(a)));
+  if(ok)kontext.score++;
+  inputs.forEach(i=>i.readOnly=true);
+  area.querySelector(".fb").innerHTML=`<div class="feedback ${ok?"good":"bad"}">${ok?"Richtig!":`Noch nicht. <span translate="no">${text.replace(/\[(.+?)\]/g,(_,a)=>`<b>${a.split("~")[0]}</b>`)}</span>`}</div>`;
+  area.querySelector(".score").textContent=`Score : ${kontext.score}`;
+  if(inf[0]==="?")area.querySelector(".fb").insertAdjacentHTML("beforeend",`<p class="hint">Verbe de référence : <span translate="no">${inf.slice(1)}</span></p>`);
+  go.textContent=kontext.n===9?"Voir le résultat":"Phrase suivante";
+ };
+}
+function restartKontext(){kontext={n:0,score:0,items:shuffle([...shuffle(sentences.filter(x=>x[1][0]!=="?")).slice(0,7),...shuffle(sentences.filter(x=>x[1][0]==="?")).slice(0,3)])};showKontext()}
+restartKontext();
+$("#marksBtn").onclick=()=>{const off=$("#cards").classList.toggle("nomarks");$(".legend").hidden=off;$("#marksBtn").classList.toggle("on",off);$("#marksBtn").textContent=off?"Afficher les couleurs":"Masquer les couleurs"};
+function setTheme(dark){document.documentElement.dataset.theme=dark?"dark":"light";$("#themeBtn").textContent=dark?"Mode clair":"Mode sombre";$('meta[name="theme-color"]').content=dark?"#131a1d":"#f5f6f2"}
+const darkQuery=matchMedia("(prefers-color-scheme: dark)");
+setTheme(darkQuery.matches);darkQuery.onchange=e=>setTheme(e.matches);
+$("#themeBtn").onclick=()=>setTheme(document.documentElement.dataset.theme!=="dark");
+renderCards();
+</script>
+</body></html>
