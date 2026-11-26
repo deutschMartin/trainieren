@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html class="notranslate" lang="de" translate="no">
+<head>
+<meta charset="utf-8"/><meta content="notranslate" name="google"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#142b3b" name="theme-color"/>
+<title>Deutsch im Unternehmen – Révisions BTS</title>
+<style>
+:root{--navy:#142b3b;--blue:#245b78;--teal:#1c827c;--cream:#f5f2eb;--paper:#fffefa;--ink:#20313b;--muted:#687780;--line:#dce3e2;--gold:#e8b44e;--red:#b94d4d;--green:#26785c;--shadow:0 12px 32px #102b3b12}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:var(--navy);color:white;padding:26px max(20px,calc((100% - 1120px)/2)) 22px;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:330px;height:330px;border:1px solid #ffffff20;border-radius:50%;right:-90px;top:-190px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff06}
+.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:#b8d9d5;font-weight:800}
+h1{font-size:clamp(1.9rem,5vw,3.25rem);line-height:1.08;margin:9px 0 10px;max-width:760px}
+header p{color:#d5e0e5;max-width:720px;margin:0}
+.headerline{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:20px}
+.pill{border:1px solid #ffffff38;border-radius:999px;padding:5px 11px;font-size:.78rem;color:#e4eeef}
+main{max-width:1120px;margin:auto;padding:22px 18px 60px}
+nav{display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;scrollbar-width:thin}
+nav button{white-space:nowrap;border:1px solid var(--line);background:#fffefa;color:var(--navy);padding:10px 15px;border-radius:12px;font-weight:750;cursor:pointer}
+nav button.active{background:var(--navy);color:white;border-color:var(--navy)}
+button{font:inherit}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #e8b44e;outline-offset:2px}
+.panel{display:none}.panel.active{display:block}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
+.span-12{grid-column:span 12}.span-8{grid-column:span 8}.span-7{grid-column:span 7}.span-6{grid-column:span 6}.span-5{grid-column:span 5}.span-4{grid-column:span 4}
+h2{font-size:1.55rem;margin:0 0 8px;color:var(--navy)}h3{font-size:1.08rem;margin:0 0 8px;color:var(--navy)}h4{margin:0 0 6px}
+.lead{color:var(--muted);margin:0 0 16px}.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--teal);font-weight:850}
+.statrow{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}.stat{background:#eef4f2;border-radius:13px;padding:12px 15px;min-width:120px}.stat strong{display:block;font-size:1.45rem;color:var(--navy);line-height:1.2}.stat small{color:var(--muted)}
+.progress{height:10px;background:#e7ecea;border-radius:99px;overflow:hidden;margin:10px 0 5px}.progress>i{display:block;height:100%;background:var(--teal);width:0;transition:width .25s}
+.company-head{display:flex;align-items:flex-start;justify-content:space-between;gap:15px;margin-bottom:14px}.company-mark{font-size:.72rem;font-weight:850;letter-spacing:.1em;padding:7px 10px;border-radius:9px;background:#eaf2f1;color:var(--teal);white-space:nowrap}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0}.fact{background:#f3f6f4;padding:12px;border-radius:12px}.fact b{display:block;color:var(--navy);font-size:.9rem}.fact span{font-size:.9rem;color:#52636a}
+.callout{border-left:4px solid var(--gold);background:#fff7e6;padding:12px 14px;border-radius:0 12px 12px 0;margin:14px 0}
+.vocab{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.word{display:flex;justify-content:space-between;gap:12px;padding:9px 11px;background:#f4f6f4;border-radius:9px}.word b{color:var(--navy)}.word span{color:var(--muted);text-align:right}
+.activity{margin-top:16px;border-top:1px solid var(--line);padding-top:16px}.activity-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}.tag{font-size:.72rem;background:#edf3f2;color:#35665f;padding:4px 8px;border-radius:99px;font-weight:800}
+.question{padding:13px 0;border-top:1px solid #edf0ee}.question:first-child{border-top:0}.qtitle{font-weight:700;margin-bottom:8px}.answers{display:grid;gap:7px}
+.option{display:flex;align-items:flex-start;gap:9px;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:white;cursor:pointer}.option:hover{border-color:#8cb8ae}.option input{margin-top:5px;accent-color:var(--teal)}
+.feedback{font-size:.88rem;margin-top:7px;min-height:1.2em}.correct{color:var(--green);font-weight:700}.wrong{color:var(--red);font-weight:700}
+select,.text-input{width:100%;padding:10px 11px;border:1px solid #cbd6d3;border-radius:10px;background:white;color:var(--ink);font:inherit}
+.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.primary,.secondary,.ghost{border:0;border-radius:10px;padding:10px 15px;font-weight:800;cursor:pointer}.primary{background:var(--teal);color:white}.primary:hover{background:#146d68}.secondary{background:var(--navy);color:white}.ghost{background:#edf1ef;color:var(--navy)}
+.result{margin-top:12px;padding:12px;border-radius:12px;background:#eef5f2;display:none}.result.show{display:block}.result strong{color:var(--navy)}
+.phrase{padding:11px 13px;border-radius:11px;background:#f3f6f4;margin:7px 0}.de{font-weight:750;color:var(--navy)}.fr{font-size:.9rem;color:var(--muted)}
+details{border:1px solid var(--line);border-radius:12px;padding:11px 13px;background:white;margin:8px 0}summary{font-weight:750;color:var(--navy);cursor:pointer}
+.small{font-size:.86rem;color:var(--muted)}.german-context{font-size:1.04rem;line-height:1.75;color:#20313b}.chatline{padding:12px 14px;border-radius:13px;margin:9px 0;max-width:92%}.chatline.partner{background:#edf3f2;border:1px solid #dce8e5}.chatline.student{background:#e8f2ff;border:1px solid #d5e5f7;margin-left:auto}.chatline b{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:#52706d;margin-bottom:4px}.chatline p{margin:0}.chatline .translation{display:block;color:#697981;font-size:.82rem;margin-top:5px}.role-badge{display:inline-block;background:#eaf2f1;color:#24665e;padding:4px 8px;border-radius:7px;font-weight:800;font-size:.8rem}.checklist{display:grid;gap:9px}
+.start-wrap{max-width:900px;margin:0 auto}.start-intro{padding:24px}.start-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.start-step{background:#f3f6f4;border-radius:12px;padding:13px}.start-step b{display:block;color:var(--navy);margin-bottom:4px}.start-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.start-actions article{background:#f7f8f6;border:1px solid var(--line);border-radius:12px;padding:15px}.lex-help{margin:7px 0 9px;padding:8px 10px;background:#f4f6f4;border-left:3px solid var(--gold);border-radius:0 8px 8px 0;color:#596a70;font-size:.88rem}.reaction-option{display:block;width:100%;text-align:left;margin:7px 0;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer}.reaction-option:hover{border-color:var(--teal)}.reaction-option.correct{border-color:var(--green);background:#eef6f1}.reaction-option.incorrect{border-color:var(--red);background:#fff2f1}.reaction-feedback{font-size:.9rem;margin-top:8px;color:var(--muted)}.reaction-card{padding:15px;background:#f7f8f6;border-radius:12px;margin:12px 0}
+@media(max-width:760px){.start-steps,.start-actions{grid-template-columns:1fr 1fr}}.checkline{display:flex;gap:9px;align-items:flex-start}.checkline input{margin-top:5px;accent-color:var(--teal)}
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:22px}
+@media(max-width:760px){.span-8,.span-7,.span-6,.span-5,.span-4{grid-column:span 12}.facts,.vocab{grid-template-columns:1fr}.company-head{display:block}.company-mark{display:inline-block;margin-top:8px}main{padding-left:13px;padding-right:13px}.card{padding:16px}}
+@media print{header{background:white;color:#142b3b;padding:10px}header p{color:#333}nav,.actions,button{display:none!important}.panel{display:block!important;page-break-inside:avoid}.card{box-shadow:none;break-inside:avoid}body{background:white}}
+
+/* Schutz gegen traduction automatique et copie rapide (comme Deutsche Demokratie) */
+html, body, body * { -webkit-user-select:none; user-select:none; -webkit-touch-callout:none; }
+input, textarea, select, option, button { -webkit-user-select:auto; user-select:auto; }
+@media print { body { display:none !important; } }
+</style>
+</head>
+<body translate="no" class="notranslate">
+<header>
+<div class="kicker">Deutsch im Unternehmen · BTS</div>
+<h1>Parler allemand en réunion</h1>
+<p>Trois entreprises, trois situations professionnelles et des outils simples pour comprendre, argumenter et trouver un accord.</p>
+<div class="headerline"><span class="pill">Niveau visé : A2+/B1</span><span class="pill">Révisions guidées</span><span class="pill">Exercices corrigés</span></div>
+</header>
+<main>
+<nav aria-label="Navigation principale">
+<button class="active" data-tab="start">Départ</button>
+<button data-tab="puma">Puma</button>
+<button data-tab="vw">Volkswagen</button>
+<button data-tab="siemens">Siemens Energy</button>
+<button data-tab="toolbox">Boîte à outils</button>
+<button data-tab="rollenspiel">Rollenspiel</button>
+</nav>
+<section class="panel active" id="start">
+<div class="start-wrap">
+<div class="card start-intro">
+<div class="eyebrow">Révisions BTS · A2+/B1</div>
+<h2>Parler allemand en réunion</h2>
+<p class="lead">Comprendre une situation professionnelle, donner son avis et trouver une solution avec ses interlocuteurs.</p>
+<div class="start-steps">
+<div class="start-step"><b>1 · Verstehen</b><span class="small">Comprendre le problème.</span></div>
+<div class="start-step"><b>2 · Reagieren</b><span class="small">Répondre à son interlocuteur.</span></div>
+<div class="start-step"><b>3 · Vorschlagen</b><span class="small">Proposer une solution.</span></div>
+<div class="start-step"><b>4 · Zusammenfassen</b><span class="small">Conclure la réunion.</span></div>
+</div>
+<p class="small">Méthode : lis le contexte et les mots-clés, fais les QCM, puis entraîne-toi à réagir en allemand. Les aides lexicales sont disponibles sous certaines questions.</p>
+</div>
+<div class="card" style="margin-top:14px">
+<div class="activity-head"><h3>Choisir un dossier</h3><span class="tag">3 situations</span></div>
+<div class="start-actions">
+<article><h3>Puma</h3><p class="small">Réduire les coûts sans affaiblir la marque.</p><button class="secondary" data-go="puma">Ouvrir le dossier</button></article>
+<article><h3>Volkswagen</h3><p class="small">Protéger les emplois et l'avenir des sites.</p><button class="secondary" data-go="vw">Ouvrir le dossier</button></article>
+<article><h3>Siemens Energy</h3><p class="small">Trouver un délai de livraison réaliste.</p><button class="secondary" data-go="siemens">Ouvrir le dossier</button></article>
+</div>
+</div>
+<div class="card" style="margin-top:14px">
+<div class="activity-head"><h3>Ma progression</h3><span class="tag" id="doneCount">0/9 activités</span></div>
+<div class="progress"><i id="progressBar"></i></div>
+<div class="small" id="progressText">Commence par un dossier.</div>
+<p class="small">Points obtenus : <strong id="scoreCount">0</strong>. La progression est conservée sur cet appareil.</p>
+<button class="ghost" id="resetAll">Réinitialiser ma progression</button>
+</div>
+</div>
+</section>
+<section class="panel" id="puma">
+<div class="company-head"><div><div class="eyebrow">Dossier 01 · Herzogenaurach</div><h2>Puma : un programme d'économies</h2><p class="lead">Comment réduire les dépenses sans abîmer l'image de la marque ?</p></div><span class="company-mark">KOSTEN SENKEN</span></div>
+<div class="grid">
+<div class="card span-7">
+<h3>Die Situation verstehen</h3>
+<p class="german-context">Puma hat wirtschaftliche Probleme. Das Unternehmen muss Kosten sparen. Bis Ende 2026 sollen etwa 900 Stellen in der Verwaltung wegfallen. Außerdem sind die Lager zu voll. Puma möchte weniger Produkte anbieten und sich auf vier Bereiche konzentrieren: Fußball, Running, Training und Sportstyle. Ab 2027 soll das Unternehmen wieder wachsen.</p>
+<details><summary>Aide en français</summary><p>Puma connaît des difficultés économiques. L'entreprise doit réduire ses coûts. Etwa 900 postes administratifs doivent disparaître d'ici fin 2026. Les stocks sont trop importants. Puma veut proposer moins de produits et se concentrer sur quatre domaines. À partir de 2027, l'entreprise souhaite retrouver la croissance.</p></details>
+<div class="facts"><div class="fact"><b>Le problème</b><span>Des coûts élevés et trop de produits en stock.</span></div><div class="fact"><b>La décision à prendre</b><span>Économiser sur la publicité, les déplacements ou les stocks.</span></div><div class="fact"><b>Le marketing</b><span>Il veut préserver la visibilité de la marque.</span></div><div class="fact"><b>La vente</b><span>Elle veut réduire les références et développer la vente directe.</span></div></div>
+<div class="callout"><b>À retenir :</b> sparen = économiser · die Kosten = les coûts · das Lager = le stock / l'entrepôt · die Werbung = la publicité.</div>
+</div>
+<div class="card span-5"><h3>Wichtige Wörter</h3><div class="vocab">
+<div class="word"><b>die Kosten</b><span>les coûts</span></div><div class="word"><b>sparen</b><span>économiser</span></div>
+<div class="word"><b>das Lager</b><span>le stock</span></div><div class="word"><b>die Werbung</b><span>la publicité</span></div>
+<div class="word"><b>der Umsatz</b><span>le chiffre d'affaires</span></div><div class="word"><b>der Verkauf</b><span>la vente</span></div>
+<div class="word"><b>die Kundschaft</b><span>la clientèle</span></div><div class="word"><b>die Marke</b><span>la marque</span></div>
+<div class="word"><b>die Mitarbeiter</b><span>les salariés</span></div><div class="word"><b>die Maßnahme</b><span>la mesure</span></div>
+</div></div>
+<div class="card span-12">
+<div class="activity-head"><h3>Activité 1 · Comprendre les enjeux</h3><span class="tag">5 questions · banque élargie</span></div>
+<p class="small">Choisis la bonne réponse. Les questions et les choix changent à chaque nouvelle série. Des aides lexicales sont proposées si nécessaire.</p>
+<div id="puma-quiz"></div><div class="actions"><button class="primary" data-check="puma-quiz">Vérifier mes réponses</button><button class="ghost" data-retry="puma-quiz">Nouvelle série</button></div><div class="result" id="puma-quiz-result"></div>
+<div class="activity">
+<div class="activity-head"><h3>Activité 2 · Le vocabulaire en contexte</h3><span class="tag">5 phrases</span></div>
+<p class="small">Complète chaque phrase avec le mot allemand qui convient.</p><div id="puma-words"></div>
+<div class="actions"><button class="primary" data-check="puma-words">Vérifier mes réponses</button><button class="ghost" data-retry="puma-words">Nouvelle série</button></div><div class="result" id="puma-words-result"></div>
+</div>
+<div class="activity">
+<div class="activity-head"><h3>Activité 3 · Réagir en réunion</h3><span class="tag">4 situations</span></div>
+<p class="small">Choisis la formulation la plus adaptée à la situation.</p><div id="puma-meeting"></div>
+<div class="actions"><button class="primary" data-check="puma-meeting">Vérifier mes réponses</button><button class="ghost" data-retry="puma-meeting">Nouvelle série</button></div><div class="result" id="puma-meeting-result"></div>
+</div>
+<div class="activity">
+<div class="activity-head"><h3>Activité 4 · Trouver le bon argument</h3><span class="tag">Argumentation · compromis</span></div>
+<p class="small">Choisis l'argument le plus convaincant pour faire avancer la discussion. Il doit répondre à l'objection et proposer une solution réaliste pour les deux parties.</p>
+<div id="puma-arguments"></div>
+<div class="actions"><button class="primary" data-check="puma-arguments">Vérifier mes réponses</button><button class="ghost" data-retry="puma-arguments">Nouvelle série</button></div>
+<div class="result" id="puma-arguments-result"></div>
+</div></div>
+</div>
+</section>
+<section class="panel" id="vw">
+<div class="company-head"><div><div class="eyebrow">Dossier 02 · Wolfsburg</div><h2>Volkswagen : emplois et compétitivité</h2><p class="lead">Comment économiser tout en protégeant les salariés et les sites de production ?</p></div><span class="company-mark">ARBEITSPLÄTZE</span></div>
+<div class="grid">
+<div class="card span-7">
+<h3>Die Situation verstehen</h3>
+<p class="german-context">Volkswagen steht unter großem wirtschaftlichem Druck. Die US-Zölle sind hoch, die Nachfrage in China ist schwächer und die Konkurrenz ist stark. Deshalb will die Geschäftsleitung Kosten senken und Stellen abbauen. Die Gewerkschaft IG Metall und der Betriebsrat sind dagegen. Sie wollen die Beschäftigten und die deutschen Standorte schützen.</p>
+<details><summary>Aide en français</summary><p>Volkswagen subit une forte pression économique : droits de douane américains, demande plus faible en Chine et forte concurrence. La direction veut réduire les coûts et supprimer des postes. IG Metall et le comité d'entreprise s'y opposent et veulent protéger les salariés et les sites allemands.</p></details>
+<div class="facts"><div class="fact"><b>La direction</b><span>Elle veut réduire les coûts pour rester compétitive.</span></div><div class="fact"><b>IG Metall</b><span>Le syndicat défend les salariés et refuse de nouvelles suppressions de postes.</span></div><div class="fact"><b>Le site industriel</b><span>Il a besoin de nouveaux modèles et d'une activité durable.</span></div><div class="fact"><b>Les alternatives</b><span>Formation, réduction du temps de travail, nouveaux produits.</span></div></div>
+<div class="callout"><b>À retenir :</b> der Arbeitsplatz = le poste de travail · die Kündigung = le licenciement / la résiliation · die Weiterbildung = la formation continue.</div>
+</div>
+<div class="card span-5"><h3>Wichtige Wörter</h3><div class="vocab">
+<div class="word"><b>der Arbeitsplatz</b><span>le poste de travail</span></div><div class="word"><b>die Beschäftigten</b><span>les salariés</span></div>
+<div class="word"><b>der Betriebsrat</b><span>le comité d'entreprise</span></div><div class="word"><b>die Gewerkschaft</b><span>le syndicat</span></div>
+<div class="word"><b>die Kündigung</b><span>le licenciement</span></div><div class="word"><b>die Weiterbildung</b><span>la formation continue</span></div>
+<div class="word"><b>der Standort</b><span>le site</span></div><div class="word"><b>der Streik</b><span>la grève</span></div>
+<div class="word"><b>die Arbeitszeit</b><span>le temps de travail</span></div><div class="word"><b>wettbewerbsfähig</b><span>compétitif</span></div>
+</div></div>
+<div class="card span-12">
+<div class="activity-head"><h3>Activité 1 · Comprendre les enjeux</h3><span class="tag">5 questions · banque élargie</span></div><p class="small">Choisis la bonne réponse. Lis aussi les aides lexicales sous les questions.</p><div id="vw-quiz"></div>
+<div class="actions"><button class="primary" data-check="vw-quiz">Vérifier mes réponses</button><button class="ghost" data-retry="vw-quiz">Nouvelle série</button></div><div class="result" id="vw-quiz-result"></div>
+<div class="activity"><div class="activity-head"><h3>Activité 2 · Le vocabulaire en contexte</h3><span class="tag">5 phrases</span></div><p class="small">Complète les phrases avec le mot allemand qui convient.</p><div id="vw-words"></div><div class="actions"><button class="primary" data-check="vw-words">Vérifier mes réponses</button><button class="ghost" data-retry="vw-words">Nouvelle série</button></div><div class="result" id="vw-words-result"></div></div>
+<div class="activity"><div class="activity-head"><h3>Activité 3 · Réagir en réunion</h3><span class="tag">4 situations</span></div><p class="small">Choisis la formulation la plus adaptée à la situation.</p><div id="vw-meeting"></div><div class="actions"><button class="primary" data-check="vw-meeting">Vérifier mes réponses</button><button class="ghost" data-retry="vw-meeting">Nouvelle série</button></div><div class="result" id="vw-meeting-result"></div></div>
+<div class="activity">
+<div class="activity-head"><h3>Activité 4 · Trouver le bon argument</h3><span class="tag">Argumentation · compromis</span></div>
+<p class="small">Choisis l'argument le plus convaincant pour faire avancer la discussion. Il doit répondre à l'objection et proposer une solution réaliste pour les deux parties.</p>
+<div id="vw-arguments"></div>
+<div class="actions"><button class="primary" data-check="vw-arguments">Vérifier mes réponses</button><button class="ghost" data-retry="vw-arguments">Nouvelle série</button></div>
+<div class="result" id="vw-arguments-result"></div>
+</div></div>
+</div>
+</section>
+<section class="panel" id="siemens">
+<div class="company-head"><div><div class="eyebrow">Dossier 03 · Munich</div><h2>Siemens Energy : planifier la production</h2><p class="lead">Comment répondre à un client pressé sans promettre l'impossible ?</p></div><span class="company-mark">LIEFERTERMIN</span></div>
+<div class="grid">
+<div class="card span-7">
+<h3>Die Situation verstehen</h3>
+<p class="german-context">Siemens Energy wächst stark. Viele Kunden brauchen Gasturbinen und Technik für Stromnetze. Besonders Rechenzentren für künstliche Intelligenz brauchen viel Strom. Die Produktion der Gasturbinen ist aber schon bis 2028 ausgebucht. Ein Kunde aus den USA braucht schnell Turbinen für ein neues Rechenzentrum. Das Unternehmen muss einen realistischen Liefertermin finden und prüfen, wie viele Mitarbeiter nötig sind.</p>
+<details><summary>Aide en français</summary><p>Siemens Energy connaît une forte croissance. La demande en turbines à gaz et en équipements pour les réseaux électriques est élevée, notamment à cause des centres de données et de l'intelligence artificielle. La production est réservée jusqu'en 2028. Un client américain veut être livré rapidement. Il faut trouver un délai réaliste et les ressources humaines nécessaires.</p></details>
+<div class="facts"><div class="fact"><b>Le client</b><span>Il veut une livraison rapide et une date garantie.</span></div><div class="fact"><b>Le commercial</b><span>Il veut gagner le contrat et satisfaire le client.</span></div><div class="fact"><b>La production</b><span>Les capacités sont déjà presque entièrement utilisées.</span></div><div class="fact"><b>La solution</b><span>Définir un délai réaliste et les moyens nécessaires.</span></div></div>
+<div class="callout"><b>À retenir :</b> liefern = livrer · die Lieferung = la livraison · der Liefertermin = la date de livraison · die Kapazität = la capacité.</div>
+</div>
+<div class="card span-5"><h3>Wichtige Wörter</h3><div class="vocab">
+<div class="word"><b>die Nachfrage</b><span>la demande</span></div><div class="word"><b>die Produktion</b><span>la production</span></div>
+<div class="word"><b>die Kapazität</b><span>la capacité</span></div><div class="word"><b>die Gasturbine</b><span>la turbine à gaz</span></div>
+<div class="word"><b>der Kunde</b><span>le client</span></div><div class="word"><b>der Auftrag</b><span>la commande</span></div>
+<div class="word"><b>der Liefertermin</b><span>la date de livraison</span></div><div class="word"><b>die Zusage</b><span>l'engagement / la confirmation</span></div>
+<div class="word"><b>die Fabrik</b><span>l'usine</span></div><div class="word"><b>der Mitarbeiter</b><span>le salarié</span></div>
+</div></div>
+<div class="card span-12">
+<div class="activity-head"><h3>Activité 1 · Comprendre les enjeux</h3><span class="tag">5 questions · banque élargie</span></div><p class="small">Choisis la bonne réponse. Lis aussi les aides lexicales sous les questions.</p><div id="siemens-quiz"></div>
+<div class="actions"><button class="primary" data-check="siemens-quiz">Vérifier mes réponses</button><button class="ghost" data-retry="siemens-quiz">Nouvelle série</button></div><div class="result" id="siemens-quiz-result"></div>
+<div class="activity"><div class="activity-head"><h3>Activité 2 · Le vocabulaire en contexte</h3><span class="tag">5 phrases</span></div><p class="small">Complète les phrases avec le mot allemand qui convient.</p><div id="siemens-words"></div><div class="actions"><button class="primary" data-check="siemens-words">Vérifier mes réponses</button><button class="ghost" data-retry="siemens-words">Nouvelle série</button></div><div class="result" id="siemens-words-result"></div></div>
+<div class="activity"><div class="activity-head"><h3>Activité 3 · Réagir en réunion</h3><span class="tag">4 situations</span></div><p class="small">Choisis la formulation la plus adaptée à la situation.</p><div id="siemens-meeting"></div><div class="actions"><button class="primary" data-check="siemens-meeting">Vérifier mes réponses</button><button class="ghost" data-retry="siemens-meeting">Nouvelle série</button></div><div class="result" id="siemens-meeting-result"></div></div>
+<div class="activity">
+<div class="activity-head"><h3>Activité 4 · Trouver le bon argument</h3><span class="tag">Argumentation · compromis</span></div>
+<p class="small">Choisis l'argument le plus convaincant pour faire avancer la discussion. Il doit répondre à l'objection et proposer une solution réaliste pour les deux parties.</p>
+<div id="siemens-arguments"></div>
+<div class="actions"><button class="primary" data-check="siemens-arguments">Vérifier mes réponses</button><button class="ghost" data-retry="siemens-arguments">Nouvelle série</button></div>
+<div class="result" id="siemens-arguments-result"></div>
+</div></div>
+</div>
+</section>
+<section class="panel" id="toolbox">
+<div class="eyebrow">Fiche mémo</div><h2>La boîte à outils de la réunion</h2><p class="lead">Des expressions courtes à mémoriser et à réutiliser dans les trois scénarios.</p>
+<div class="grid">
+<div class="card span-6"><h3>Ouvrir et organiser</h3>
+<div class="phrase"><div class="de">Ich begrüße Sie alle.</div><div class="fr">Je vous souhaite la bienvenue à tous.</div></div>
+<div class="phrase"><div class="de">Heute geht es um …</div><div class="fr">Aujourd'hui, il s'agit de…</div></div>
+<div class="phrase"><div class="de">Ich schlage vor, dass wir mit … beginnen.</div><div class="fr">Je propose que nous commencions par…</div></div>
+<div class="phrase"><div class="de">Lassen Sie uns eine Entscheidung treffen.</div><div class="fr">Prenons une décision.</div></div>
+</div>
+<div class="card span-6"><h3>Donner son avis</h3>
+<div class="phrase"><div class="de">Meiner Meinung nach …</div><div class="fr">À mon avis…</div></div>
+<div class="phrase"><div class="de">Ich bin der Ansicht, dass …</div><div class="fr">Je suis d'avis que…</div></div>
+<div class="phrase"><div class="de">Für mich ist wichtig, dass …</div><div class="fr">Pour moi, il est important que…</div></div>
+<div class="phrase"><div class="de">Aus Sicht unseres Unternehmens …</div><div class="fr">Du point de vue de notre entreprise…</div></div>
+</div>
+<div class="card span-6"><h3>Être d'accord ou nuancer</h3>
+<div class="phrase"><div class="de">Da haben Sie recht.</div><div class="fr">Vous avez raison.</div></div>
+<div class="phrase"><div class="de">Das sehe ich genauso.</div><div class="fr">Je suis du même avis.</div></div>
+<div class="phrase"><div class="de">Ich verstehe Ihren Standpunkt, aber …</div><div class="fr">Je comprends votre point de vue, mais…</div></div>
+<div class="phrase"><div class="de">Das sehe ich anders.</div><div class="fr">Je vois les choses autrement.</div></div>
+</div>
+<div class="card span-6"><h3>Proposer et négocier</h3>
+<div class="phrase"><div class="de">Ich schlage vor, dass …</div><div class="fr">Je propose que…</div></div>
+<div class="phrase"><div class="de">Wie wäre es, wenn wir …?</div><div class="fr">Que diriez-vous si nous… ?</div></div>
+<div class="phrase"><div class="de">Wir könnten auch …</div><div class="fr">Nous pourrions aussi…</div></div>
+<div class="phrase"><div class="de">Könnten wir einen Kompromiss finden?</div><div class="fr">Pourrions-nous trouver un compromis ?</div></div>
+</div>
+<div class="card span-12"><h3>Conclure et rédiger le compte rendu</h3>
+<div class="grid">
+<div class="span-4"><div class="phrase"><div class="de">Fassen wir zusammen: …</div><div class="fr">Résumons : …</div></div></div>
+<div class="span-4"><div class="phrase"><div class="de">Wer übernimmt welche Aufgabe?</div><div class="fr">Qui prend en charge quelle tâche ?</div></div></div>
+<div class="span-4"><div class="phrase"><div class="de">Wann treffen wir uns wieder?</div><div class="fr">Quand nous réunissons-nous à nouveau ?</div></div></div>
+</div>
+<p><b>Les 5 éléments du compte rendu (das Protokoll) :</b></p>
+<ol><li><b>Das Thema :</b> le sujet de la réunion.</li><li><b>Die Probleme :</b> les problèmes discutés.</li><li><b>Die Entscheidung :</b> la décision prise.</li><li><b>Die Verantwortlichen :</b> les personnes responsables.</li><li><b>Der nächste Termin :</b> la prochaine date de réunion.</li></ol>
+</div>
+<div class="card span-12"><h3>Mini-méthode : construire un argument simple</h3>
+<p>Une intervention efficace peut tenir en trois étapes :</p>
+<div class="facts"><div class="fact"><b>1. L'idée</b><span>Meiner Meinung nach müssen wir Kosten sparen.</span></div><div class="fact"><b>2. La raison</b><span>…, weil unsere Ausgaben zu hoch sind.</span></div><div class="fact"><b>3. La proposition</b><span>Ich schlage vor, dass wir weniger reisen.</span></div></div>
+<p class="small">Astuce : après <b>weil</b>, le verbe conjugué se place à la fin. Après <b>dass</b>, le verbe conjugué se place également à la fin.</p>
+</div>
+<div class="card span-12"><h3>Avant de prendre la parole : auto-évaluation</h3>
+<div class="checklist">
+<label class="checkline"><input type="checkbox"/> Je peux présenter le problème de l'entreprise en deux phrases.</label>
+<label class="checkline"><input type="checkbox"/> Je peux donner mon avis avec « Meiner Meinung nach… ».</label>
+<label class="checkline"><input type="checkbox"/> Je peux exprimer un désaccord poliment.</label>
+<label class="checkline"><input type="checkbox"/> Je peux proposer une solution ou un compromis.</label>
+<label class="checkline"><input type="checkbox"/> Je peux résumer une décision et indiquer qui fait quoi.</label>
+</div>
+</div>
+</div>
+</section>
+<section class="panel" id="rollenspiel">
+<div class="eyebrow">Mündliche Prüfung · Gesprächstraining</div>
+<h2>Rollenspiel: Sie sind dran!</h2>
+<p class="lead">Eine neue Besprechung wird zufällig vorbereitet. Lesen Sie Ihre Rolle, hören Sie den Gesprächspartner (Text) und antworten Sie auf Deutsch.</p>
+<div class="card" style="margin-bottom:16px">
+<div class="activity-head"><h3>1 · Schnell reagieren</h3><span class="tag">Entraînement interactif</span></div>
+<p class="small">Lis la phrase de ton interlocuteur et choisis une réponse adaptée. Les situations changent à chaque nouvelle série.</p>
+<div id="reaction-training"></div>
+<div class="actions"><button class="primary" id="reaction-new">Nouvelle série</button></div>
+</div>
+<div class="grid">
+<div class="card span-4">
+<h3>2 · Votre rôle</h3>
+<p class="small">Klicken Sie auf „Neue Situation“. Sie erhalten eine zufällige Firma, eine Rolle und ein Gesprächsziel.</p>
+<div class="stat" id="rp-company"><strong>—</strong><small>Unternehmen</small></div>
+<div class="phrase" id="rp-role"><b>Ihre Rolle</b><br/><span id="rp-role-text">Noch keine Rolle gewählt.</span></div>
+<div class="phrase"><b>Ihr Ziel</b><br/><span id="rp-goal">Starten Sie eine neue Situation.</span></div>
+<div class="actions"><button class="primary" id="rp-new">Neue Situation</button></div>
+<details><summary>Hilfreiche Redemittel</summary>
+<p><b>Meiner Meinung nach …</b> · <b>Ich verstehe Ihren Standpunkt, aber …</b></p>
+<p><b>Ich schlage vor, dass …</b> · <b>Könnten Sie das genauer erklären?</b></p>
+<p><b>Wir müssen eine Lösung finden.</b> · <b>Fassen wir zusammen: …</b></p>
+</details>
+</div>
+<div class="card span-8">
+<div class="activity-head"><h3>La conversation</h3><span class="tag" id="rp-step">Warten auf den Start</span></div>
+<div aria-live="polite" id="rp-chat">
+<div class="callout">Klicken Sie auf „Neue Situation“, um das Gespräch zu beginnen.</div>
+</div>
+<label for="rp-answer"><b>Ihre Antwort auf Deutsch</b></label>
+<textarea disabled="" id="rp-answer" placeholder="Schreiben Sie hier Ihre Antwort …" rows="4" style="width:100%;margin-top:7px;padding:12px;border:1px solid #cbd6d3;border-radius:12px;font:inherit"></textarea>
+<div class="actions">
+<button class="primary" disabled="" id="rp-send">Antwort senden</button>
+<button class="ghost" disabled="" id="rp-hint">Hilfestellung</button>
+<button class="ghost" disabled="" id="rp-finish">Gespräch beenden</button>
+</div>
+<div class="result" id="rp-feedback"></div>
+<div class="result" id="rp-hintbox"></div>
+</div>
+<div class="card span-12">
+<h3>Nach dem Gespräch · Selbstkontrolle</h3>
+<p class="small">Diese Hinweise helfen Ihnen, Ihre Antwort zu verbessern. Die automatische Rückmeldung prüft nur einfache Merkmale (Länge, typische Redemittel und Wörter aus dem Thema). Sie ersetzt keine vollständige Korrektur durch eine Lehrkraft.</p>
+<div class="small" id="rp-review">Ihre Gesprächsauswertung erscheint hier am Ende.</div>
+</div>
+</div>
+</section>
+<footer>Deutsch im Unternehmen · Support de révision BTS · Page autonome, utilisable hors connexion</footer>
+</main>
+<script>
+const BANK={
+puma:{
+quiz:[
+["Warum muss Puma sparen?",["Das Unternehmen hat wirtschaftliche Probleme.","Puma möchte keine Schuhe mehr verkaufen.","Alle Kunden sind zufrieden."],0,"wirtschaftliche Probleme = difficultés économiques"],
+["Was ist bei Puma im Lager los?",["Das Lager ist leer.","Es gibt zu viele Produkte.","Die Produkte sind kostenlos."],1,"das Lager = le stock ; zu viele = trop de"],
+["Was möchte der Marketingleiter schützen?",["Die Werbung und die Sichtbarkeit der Marke.","Die Zahl der Lager.","Die Geschäftsreisen."],0,"die Sichtbarkeit = la visibilité ; die Marke = la marque"],
+["Was schlägt der Vertriebsleiter vor?",["Mehr Produkte herstellen.","Weniger Produkte anbieten und direkt verkaufen.","Den Online-Shop schließen."],1,"direkt verkaufen = vendre directement"],
+["Wie kann Puma auch Geld sparen?",["Weniger Geschäftsreisen machen.","Mehr Produkte kaufen.","Mehr Lager bauen."],0,"die Geschäftsreise = le déplacement professionnel"],
+["Was ist ein möglicher Kompromiss?",["Die Werbung ganz stoppen.","Bei Reisen sparen und wichtige Werbung behalten.","Alle Produkte verkaufen."],1,"der Kompromiss = le compromis"]
+],
+words:[
+["Puma muss die ______ senken.","Kosten",["Kosten","Kündigungen","Kapazitäten"]],
+["Die Produkte liegen noch im ______.","Lager",["Lager","Streik","Standort"]],
+["Eine starke Marke braucht ______.","Werbung",["Werbung","Liefertermine","Weiterbildung"]],
+["Puma möchte direkt an die ______ verkaufen.","Kundschaft",["Kundschaft","Gewerkschaft","Produktion"]],
+["Puma möchte weniger Produkte anbieten. Die Produktpalette soll ______ werden.","verkleinert",["verkleinert","gestreikt","geliefert"]]
+],
+meeting:[
+["Vous voulez donner votre avis.",["Meiner Meinung nach …","Wann treffen wir uns wieder?","Ich begrüße Sie alle."],0],
+["Vous n'êtes pas d'accord, mais vous restez poli.",["Das ist perfekt.","Ich verstehe Ihren Standpunkt, aber …","Ich beende die Besprechung."],1],
+["Vous proposez de réduire les déplacements.",["Ich schlage vor, dass wir weniger reisen.","Der Kunde ist sehr wichtig.","Die Produktion ist ausgebucht."],0],
+["Vous demandez qui est responsable.",["Das sehe ich anders.","Wer übernimmt diese Aufgabe?","Wir haben zu viele Produkte."],1]
+]},
+vw:{
+quiz:[
+["Warum steht Volkswagen unter Druck?",["Wegen hoher Kosten und starker Konkurrenz.","Wegen zu vieler Sportschuhe.","Wegen fehlender Werbung in Frankreich."],0,"unter Druck stehen = être sous pression ; die Konkurrenz = la concurrence"],
+["Was möchte die Geschäftsleitung?",["Alle Werke schließen.","Kosten senken und wettbewerbsfähig bleiben.","Mehr Streiks organisieren."],1,"die Geschäftsleitung = la direction ; wettbewerbsfähig = compétitif"],
+["Wen vertritt IG Metall?",["Die Kunden.","Die Konkurrenz.","Die Beschäftigten."],2,"vertreten = représenter ; die Beschäftigten = les salariés"],
+["Welche Lösung ist eine Alternative zu Kündigungen?",["Weiterbildung für die Mitarbeiter.","Mehr Entlassungen.","Weniger Sicherheit für die Werke."],0,"die Weiterbildung = la formation continue ; die Kündigung = le licenciement"],
+["Was möchte der Werksleiter schützen?",["Die Werbung.","Die Zukunft seines Standorts.","Die Preise der Autos."],1,"der Standort = le site industriel"],
+["Was kann ein Streik verursachen?",["Mehr Kunden.","Weniger Kosten für alle.","Probleme bei der Produktion und Lieferung."],2,"der Streik = la grève ; verursachen = provoquer"]
+],
+words:[
+["IG Metall ist eine ______.","Gewerkschaft",["Gewerkschaft","Werbung","Lieferung"]],
+["Der Betriebsrat vertritt die ______.","Beschäftigten",["Beschäftigten","Turbinen","Produkte"]],
+["Eine ______ kann eine Alternative zur Kündigung sein.","Weiterbildung",["Weiterbildung","Nachfrage","Marke"]],
+["Die Firma muss konkurrenzfähig ______.","bleiben",["bleiben","liefern","streiken"]],
+["Ein Werk ist ein Produktions-______.","Standort",["Standort","Kunde","Werbung"]]
+],
+meeting:[
+["Vous représentez les salariés et refusez les licenciements.",["Wir fordern, dass die Arbeitsplätze geschützt werden.","Wir brauchen mehr Werbung.","Der Liefertermin ist zu spät."],0],
+["Vous expliquez pourquoi l'entreprise doit faire des économies.",["Wir müssen wettbewerbsfähig bleiben.","Wir möchten die Produktpalette verkleinern.","Die Turbinen sind ausgebucht."],0],
+["Vous proposez la formation comme alternative.",["Es gibt Alternativen, zum Beispiel Weiterbildung.","Die Marke braucht Werbung.","Der Kunde zahlt mehr."],0],
+["Vous voulez éviter une grève.",["Ein Streik wäre für alle schlecht.","Die Werbung muss steigen.","Wir liefern morgen."],0]
+]},
+siemens:{
+quiz:[
+["Warum braucht der Kunde Gasturbinen?",["Für ein neues Rechenzentrum.","Für eine Schuhfabrik.","Für einen VW-Standort."],0,"das Rechenzentrum = le centre de données"],
+["Bis wann ist die Produktion der Gasturbinen ausgebucht?",["Bis 2026.","Bis 2027.","Bis 2028."],2,"ausgebucht = complet / réservé"],
+["Warum kann Siemens nicht sofort liefern?",["Die Produktion hat wenig freie Kapazität.","Es gibt keine Kunden.","Die Firma verkauft keine Energie."],0,"die Kapazität = la capacité de production ; frei = disponible"],
+["Was möchte der Kunde bekommen?",["Eine neue Werbekampagne.","Einen festen und frühen Liefertermin.","Weniger Mitarbeiter."],1,"der Liefertermin = la date de livraison ; fest = ferme"],
+["Was kann der Kunde für eine schnellere Lieferung anbieten?",["Weniger bezahlen.","Den Auftrag stoppen.","Mehr bezahlen."],2,"anbieten = proposer ; schneller = plus rapide"],
+["Was ist bei der Besprechung besonders wichtig?",["Ein realistischer Termin und eine klare Zusage.","Eine neue Produktfarbe.","Ein längerer Urlaub."],0,"realistisch = réaliste ; die Zusage = l'engagement"]
+],
+words:[
+["Die ______ nach Gasturbinen ist sehr hoch.","Nachfrage",["Nachfrage","Kündigung","Werbung"]],
+["Die ______ ist bis 2028 ausgebucht.","Produktion",["Produktion","Gewerkschaft","Kundschaft"]],
+["Der Kunde braucht einen festen ______.","Liefertermin",["Liefertermin","Streik","Standort"]],
+["Wir haben nicht genug ______ für einen früheren Termin.","Kapazitäten",["Kapazitäten","Marken","Abfindungen"]],
+["Der Kunde möchte eine verbindliche ______.","Zusage",["Zusage","Kündigung","Werbung"]]
+],
+meeting:[
+["Vous demandez si une livraison plus tôt est possible.",["Können wir früher liefern?","Wir müssen die Werbung kürzen.","Wir fordern keine Kündigungen."],0],
+["Vous refusez une promesse irréaliste.",["Wir müssen realistisch bleiben.","Das Lager ist zu voll.","Wir brauchen neue Modelle."],0],
+["Vous expliquez que le temps est très important.",["Für uns ist die Zeit sehr wichtig.","Wir müssen die Kosten senken.","Wir wollen weniger Produkte anbieten."],0],
+["Vous demandez une explication précise.",["Könnten Sie das genauer erklären?","Ich begrüße Sie alle.","Das sehe ich genauso."],0]
+]}
+};
+const STORAGE_KEY="deutsch_bts_meetings_progress_v1";
+let savedProgress={};
+try{savedProgress=JSON.parse(localStorage.getItem(STORAGE_KEY)||"{}")||{}}catch(e){savedProgress={}}
+const completed=new Set(Array.isArray(savedProgress.completed)?savedProgress.completed:[]);
+let totalPoints=Number(savedProgress.totalPoints)||0;
+let maxPoints=Number(savedProgress.maxPoints)||0;
+const sessions={};
+function saveProgress(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify({completed:[...completed],totalPoints,maxPoints}))}catch(e){}}
+const $=id=>document.getElementById(id);
+function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
+function sample(a,n){return shuffle(a).slice(0,n)}
+function renderQuiz(id,bank){
+ const items=sample(bank,5);sessions[id]={items,submitted:false,kind:"quiz"};
+ $(id).innerHTML=items.map((q,i)=>`<div class="question" data-q="${i}"><div class="qtitle">${i+1}. ${q[0]}</div>${q[3]?`<div class="lex-help">Aide : ${q[3]}</div>`:""}<div class="answers">${shuffle(q[1].map((a,j)=>({a,original:j}))).map(x=>`<label class="option"><input type="radio" name="${id}-${i}" value="${x.original}"><span>${x.a}</span></label>`).join("")}</div><div class="feedback" id="${id}-f${i}"></div></div>`).join("");
+ $(id+"-result").classList.remove("show");
+}
+function renderWords(id,bank){
+ const items=sample(bank,5);sessions[id]={items,submitted:false,kind:"words"};
+ $(id).innerHTML=items.map((q,i)=>`<div class="question"><div class="qtitle">${i+1}. ${q[0].replace("______","<span style='color:#1c827c'>______</span>")}</div><select id="${id}-a${i}"><option value="">Choisir…</option>${shuffle(q[2]).map(x=>`<option>${x}</option>`).join("")}</select><div class="feedback" id="${id}-f${i}"></div></div>`).join("");
+ $(id+"-result").classList.remove("show");
+}
+function renderMeeting(id,bank){
+ const items=sample(bank,4);sessions[id]={items,submitted:false,kind:"meeting"};
+ $(id).innerHTML=items.map((q,i)=>`<div class="question"><div class="qtitle">${i+1}. ${q[0]}</div><div class="answers">${shuffle(q[1].map((a,j)=>({a,original:j}))).map(x=>`<label class="option"><input type="radio" name="${id}-${i}" value="${x.original}"><span>${x.a}</span></label>`).join("")}</div><div class="feedback" id="${id}-f${i}"></div></div>`).join("");
+ $(id+"-result").classList.remove("show");
+}
+
+// Exercices courts pour apprendre à réagir à son interlocuteur.
+const REACTIONS=[
+ {line:"Wir müssen Kosten senken. Wo können wir sparen?",help:"Kosten senken = réduire les coûts",options:["Meiner Meinung nach können wir bei den Reisen sparen.","Ich begrüße Sie alle.","Der Liefertermin ist 2028."],correct:0,why:"Tu donnes une proposition en lien direct avec la question."},
+ {line:"Ich bin mit Ihrem Vorschlag nicht einverstanden.",help:"nicht einverstanden = pas d'accord",options:["Ich verstehe Ihren Standpunkt, aber …", "Das Lager ist zu voll.","Wann beginnt die Produktion?"],correct:0,why:"Tu réponds poliment au désaccord et tu peux ensuite expliquer ton idée."},
+ {line:"Können Sie das genauer erklären?",help:"genauer erklären = expliquer plus précisément",options:["Ja, gern. Ich meine, dass …", "Wir müssen eine Lösung finden.","Ich bin der Kunde."],correct:0,why:"Tu réponds à la demande d'explication en développant ton idée."},
+ {line:"Ihre Lösung ist interessant, aber sie ist zu teuer.",help:"zu teuer = trop cher",options:["Wir könnten eine günstigere Lösung suchen.","Ich eröffne die Besprechung.","Die Kundschaft ist groß."],correct:0,why:"Tu proposes une alternative et tu fais avancer la négociation."},
+ {line:"Wann können Sie die Turbinen liefern?",help:"liefern = livrer",options:["Wir prüfen die Kapazitäten und geben Ihnen einen festen Termin.","Wir müssen die Werbung schützen.","Die Beschäftigten brauchen Weiterbildung."],correct:0,why:"Tu réponds sur le délai et tu évites une promesse trop rapide."},
+ {line:"Wir wollen keine weiteren Kündigungen.",help:"die Kündigung = le licenciement",options:["Wir können über Weiterbildung und kürzere Arbeitszeit sprechen.","Der Kunde möchte mehr bezahlen.","Die Marke braucht Sichtbarkeit."],correct:0,why:"Tu proposes des alternatives adaptées à la situation de Volkswagen."},
+ {line:"Können wir einen Kompromiss finden?",help:"der Kompromiss = le compromis",options:["Ja. Wir könnten einen Teil Ihrer Idee übernehmen.","Nein, ich habe keine Frage.","Die Produktion ist bis 2028 ausgebucht."],correct:0,why:"Tu acceptes de chercher une solution commune."},
+ {line:"Fassen wir die Entscheidung zusammen.",help:"zusammenfassen = résumer",options:["Wir sparen bei den Reisen. Frau Müller ist verantwortlich. Wir sprechen nächste Woche wieder.","Ich verstehe Ihren Standpunkt.","Könnten Sie das erklären?"],correct:0,why:"Tu résumes une décision, une personne responsable et un prochain rendez-vous."},
+ {line:"Wir können keine zusätzlichen Mitarbeiter einstellen.",help:"einstellen = embaucher",options:["Können wir die Aufgaben anders planen?","Wir müssen die Werbung stoppen.","Ich bin mit dem Preis zufrieden."],correct:0,why:"Tu demandes une autre organisation au lieu de bloquer la discussion."},
+ {line:"Ihr Vorschlag kostet zu viel Geld.",help:"der Vorschlag = la proposition",options:["Wir können zuerst eine günstigere Variante testen.","Dann gibt es keine Lösung.","Die Mitarbeiter sind im Urlaub."],correct:0,why:"Tu proposes un test moins coûteux."},
+ {line:"Wir brauchen eine Entscheidung bis Freitag.",help:"bis Freitag = d'ici vendredi",options:["Ich schlage vor, dass wir heute zwei Lösungen vergleichen.","Die Marke ist sehr bekannt.","Die Produktion ist groß."],correct:0,why:"Tu proposes une étape concrète avant la date limite."},
+ {line:"Der Kunde kann nicht bis 2028 warten.",help:"warten = attendre",options:["Wir prüfen eine Teillieferung zu einem früheren Termin.","Wir brauchen weniger Werbung.","Die Beschäftigten wollen Weiterbildung."],correct:0,why:"La livraison partielle peut répondre au besoin urgent."},
+ {line:"Wir brauchen mehr Sicherheit für die Beschäftigten.",help:"die Beschäftigten = les salariés",options:["Wir können einen gemeinsamen Zeitplan vereinbaren.","Wir erhöhen sofort die Preise.","Wir schließen das Gespräch."],correct:0,why:"Un calendrier partagé apporte de la visibilité aux salariés."},
+ {line:"Können Sie einen konkreten Vorschlag machen?",help:"konkret = concret",options:["Ja. Wir sparen bei den Reisen und prüfen das Ergebnis in drei Monaten.","Ich bin nicht hier.","Der Kunde ist aus den USA."],correct:0,why:"Tu formules une proposition précise avec une échéance de suivi."}
+];
+function renderReactions(){
+ const root=$("reaction-training");if(!root)return;
+ const items=sample(REACTIONS,4);
+ root.innerHTML=items.map((q,i)=>`<div class="reaction-card" data-reaction="${i}"><div class="small">Votre interlocuteur dit :</div><p class="de">${q.line}</p><div class="lex-help">Aide : ${q.help}</div>${shuffle(q.options.map((v,j)=>({v,j}))).map(x=>`<button type="button" class="reaction-option" data-choice="${x.j}" data-index="${i}">${x.v}</button>`).join("")}<div class="reaction-feedback" id="reaction-feedback-${i}"></div></div>`).join("");
+ root.querySelectorAll(".reaction-option").forEach(b=>b.addEventListener("click",()=>{
+  const i=Number(b.dataset.index),q=items[i],card=b.closest(".reaction-card");
+  if(card.dataset.done)return;card.dataset.done="1";
+  card.querySelectorAll(".reaction-option").forEach(x=>{x.disabled=true;if(Number(x.dataset.choice)===q.correct)x.classList.add("correct")});
+  if(Number(b.dataset.choice)!==q.correct)b.classList.add("incorrect");
+  $("reaction-feedback-"+i).textContent=(Number(b.dataset.choice)===q.correct?"Bonne réaction. ":"Pas tout à fait. ")+q.why;
+ }));
+}
+$("reaction-new").addEventListener("click",renderReactions);
+renderReactions();
+
+// Randomized guided role-play. The learner writes every turn; partner replies adapt to a few detected keywords.
+const ROLEPLAYS=[
+ {company:"Puma",topic:"Sparprogramm",roles:[
+  {student:"Marketingleiter/in",goal:"Sie möchten die Werbung behalten. Schlagen Sie Einsparungen bei den Reisen vor.",partner:"Geschäftsführer/in",opening:"Guten Morgen. Wir müssen bald Kosten sparen. Wo können wir sparen?",keywords:["werbung","marketing","reisen","veranstaltung","budget"],hint:"Meiner Meinung nach dürfen wir das Werbebudget nicht stark kürzen, weil … Ich schlage vor, dass wir bei … sparen."},
+  {student:"Vertriebsleiter/in",goal:"Sie möchten weniger Produkte anbieten und mehr online verkaufen.",partner:"Geschäftsführer/in",opening:"Unser Lager ist zu voll. Was können wir tun?",keywords:["lager","produkte","online","direkt","modell"],hint:"Wir haben zu viele Produkte im Lager. Ich schlage vor, dass wir … Außerdem könnten wir …"},
+  {student:"Geschäftsführer/in",goal:"Sie leiten das Gespräch. Finden Sie eine Lösung für Marketing und Vertrieb.",partner:"Marketingleiter/in",opening:"Ich möchte die Werbung nicht stark kürzen. Unsere Marke muss bekannt bleiben. Was schlagen Sie vor?",keywords:["kompromiss","werbung","kosten","reisen","sparen"],hint:"Ich verstehe Ihren Standpunkt, aber wir müssen Kosten senken. Wie wäre es, wenn wir …?"}
+ ],follow:[
+  ["Wie können wir sicher sein, dass die Kunden unsere Marke weiter sehen?","Können Sie ein Beispiel nennen?"],
+  ["Das klingt interessant. Welche Abteilung übernimmt diese Aufgabe?","Wie viel Geld können wir sparen?"],
+  ["Können Sie einen Kompromiss vorschlagen?","Was ist Ihrer Meinung nach der wichtigste Punkt?"]
+ ],closing:"Gut. Fassen wir zusammen: Was ist die Entscheidung? Wer macht die Aufgabe? Wann sprechen wir wieder?"},
+ {company:"Volkswagen",topic:"Arbeitsplätze und Wettbewerbsfähigkeit",roles:[
+  {student:"Personalvorstand",goal:"Erklären Sie, warum VW sparen muss. Schlagen Sie eine Lösung ohne Kündigungen vor.",partner:"Betriebsratsvorsitzende/r",opening:"Wir wollen keine weiteren Kündigungen. Wie können Sie die Beschäftigten schützen?",keywords:["kosten","weiterbildung","altersteilzeit","arbeitszeit","standort","kündigung"],hint:"Wir müssen wettbewerbsfähig bleiben. Gleichzeitig möchten wir Kündigungen vermeiden. Wir schlagen … vor."},
+  {student:"Betriebsratsvorsitzende/r",goal:"Sie sind gegen Kündigungen. Schlagen Sie andere Lösungen vor.",partner:"Personalvorstand",opening:"Volkswagen muss sparen. Sonst sind weitere Arbeitsplätze in Gefahr. Was meinen Sie?",keywords:["weiterbildung","arbeitszeit","standort","beschäftigten","kündigung","streik"],hint:"Das ist für uns nicht akzeptabel. Es gibt Alternativen, zum Beispiel … Wir fordern, dass …"},
+  {student:"Werksleiter/in",goal:"Sie möchten Ihr Werk schützen und einen Streik vermeiden.",partner:"Personalvorstand",opening:"Wir müssen besser produzieren. Was braucht Ihr Werk für die Zukunft?",keywords:["standort","werk","produktion","modell","streik","arbeitsplätze"],hint:"Aus Sicht meines Werks ist wichtig, dass … Wir brauchen neue Modelle und …"}
+ ],follow:[
+  ["Ihre Idee ist interessant. Aber wie viel Geld können wir damit sparen?","Was sagen die Beschäftigten dazu?"],
+  ["Was können Sie für die Zukunft des Werks zusagen?","Wann können wir das machen?"],
+  ["Wir brauchen eine Lösung. Was ist für beide Seiten möglich?","Was machen wir, wenn wir uns nicht einigen?"]
+ ],closing:"Fassen wir zusammen: Welche Entscheidung treffen wir? Wer ist verantwortlich? Wann treffen wir uns wieder?"},
+ {company:"Siemens Energy",topic:"Liefertermin und Produktionskapazität",roles:[
+  {student:"Vertriebsleiter/in",goal:"Sie möchten den Auftrag bekommen. Nennen Sie einen realistischen Liefertermin.",partner:"Kunde/Kundin",opening:"Wir brauchen die Gasturbinen schnell. Wann können Sie liefern?",keywords:["liefertermin","früher","kapazität","preis","produktion","zusage"],hint:"Der Auftrag ist für uns sehr wichtig. Ich prüfe unsere Kapazitäten. Frühestens … können wir liefern. Wir könnten auch …"},
+  {student:"Produktionsleiter/in",goal:"Erklären Sie, warum die Produktion voll ist. Schlagen Sie einen Plan vor.",partner:"Vertriebsleiter/in",opening:"Der Kunde möchte die Turbinen früher. Können wir schneller produzieren?",keywords:["kapazität","produktion","mitarbeiter","2028","realistisch","fabrik"],hint:"Unsere Produktion ist bis 2028 ausgebucht. Wir müssen realistisch bleiben. Wir brauchen zusätzliche Mitarbeiter oder …"},
+  {student:"Kunde/Kundin",goal:"Sie brauchen die Turbinen schnell. Fragen Sie nach einem früheren Termin.",partner:"Vertriebsleiter/in",opening:"Unsere Produktion ist fast voll. Was ist für Sie am wichtigsten?",keywords:["früher","lieferung","termin","preis","zusage","monat"],hint:"Für uns ist die Zeit sehr wichtig. Können Sie uns entgegenkommen? Wir sind bereit, … zu zahlen, wenn …"}
+ ],follow:[
+  ["Das ist zu spät. Können Sie früher liefern?","Können mehr Mitarbeiter helfen?"],
+  ["Können Sie den Termin schriftlich bestätigen?","Was kostet eine schnellere Lieferung?"],
+  ["Welche Kapazitäten sind noch frei?","Können Sie einen Teil früher liefern?"]
+ ],closing:"Fassen wir zusammen: Wann liefern wir? Wer prüft die Produktion? Wann bekommt der Kunde eine Antwort?"}
+];
+let rpState=null;
+function rpNew(){
+ const scenario=ROLEPLAYS[Math.floor(Math.random()*ROLEPLAYS.length)];
+ const role=scenario.roles[Math.floor(Math.random()*scenario.roles.length)];
+ rpState={scenario,role,turn:0,answers:[],finished:false};
+ $("rp-company").innerHTML=`<strong>${scenario.company}</strong><small>${scenario.topic}</small>`;
+ $("rp-role-text").textContent=role.student;
+ $("rp-goal").textContent=role.goal;
+ $("rp-chat").innerHTML=`<div class="chatline partner"><b>${role.partner}</b><p>${role.opening}</p></div>`;
+ $("rp-step").textContent="Intervention 1 / 4";
+ $("rp-answer").disabled=false;$("rp-answer").value="";$("rp-send").disabled=false;$("rp-hint").disabled=false;$("rp-finish").disabled=false;
+ $("rp-feedback").classList.remove("show");$("rp-hintbox").classList.remove("show");$("rp-review").textContent="Ihre Gesprächsauswertung erscheint hier am Ende.";
+}
+function rpSend(){
+ if(!rpState||rpState.finished)return;
+ const answer=$("rp-answer").value.trim();if(!answer){$("rp-feedback").classList.add("show");$("rp-feedback").textContent="Bitte schreiben Sie zuerst eine Antwort auf Deutsch.";return}
+ const st=rpState;st.answers.push(answer);
+ const chat=$("rp-chat");
+ chat.insertAdjacentHTML("beforeend",`<div class="chatline student"><b>Sie · ${st.role.student}</b><p>${escapeHTML(answer)}</p></div>`);
+ const low=answer.toLowerCase();
+ const hits=st.role.keywords.filter(k=>low.includes(k)).length;
+ const hasConnector=/weil|dass|aber|deshalb|außerdem|wenn/.test(low);
+ const hasPhrase=/meiner meinung|ich schlage vor|ich bin der ansicht|wir könnten|ich verstehe|ich fordere|für uns/.test(low);
+ let feedback=[];
+ if(answer.split(/\s+/).length<6)feedback.push("Ajoute une raison ou un exemple à ta réponse.");
+ else feedback.push("Ta réponse est développée. Essaie maintenant de préciser ton argument.");
+ if(hasPhrase)feedback.push("Bonne utilisation d’une expression de réunion.");
+ else feedback.push("Aide : « Meiner Meinung nach … » ou « Ich schlage vor, dass … ».");
+ if(hasConnector)feedback.push("Tu relies tes idées avec un mot de liaison.");
+ if(hits>0)feedback.push("Tu utilises du vocabulaire adapté au thème.");
+ $("rp-feedback").classList.add("show");$("rp-feedback").innerHTML="<b>Kurzes Feedback</b><br>"+feedback.join("<br>");
+ $("rp-answer").value="";
+ if(st.turn<2){
+  const choices=st.scenario.follow[st.turn];const reply=choices[Math.floor(Math.random()*choices.length)];
+  chat.insertAdjacentHTML("beforeend",`<div class="chatline partner"><b>${st.role.partner}</b><p>${reply}</p></div>`);
+  st.turn++;$("rp-step").textContent=`Intervention ${st.turn+1} / 4`;
+ }else if(st.turn===2){
+  chat.insertAdjacentHTML("beforeend",`<div class="chatline partner"><b>${st.role.partner}</b><p>${st.scenario.closing}</p></div>`);
+  st.turn++;$("rp-step").textContent="Abschluss · Ihre Zusammenfassung";
+  $("rp-answer").placeholder="Fassen Sie jetzt die Entscheidung in 2–3 Sätzen zusammen …";
+ }else{
+  $("rp-step").textContent="Gespräch beendet · Auswertung möglich";
+  $("rp-send").disabled=true;$("rp-answer").disabled=true;
+  $("rp-finish").textContent="Auswertung anzeigen";
+ }
+}
+function rpHint(){
+ if(!rpState)return;
+ $("rp-hintbox").classList.add("show");
+ $("rp-hintbox").innerHTML="<b>Formulierungshilfe</b><br>"+rpState.role.hint;
+}
+function rpFinish(){
+ if(!rpState)return;
+ rpState.finished=true;
+ $("rp-answer").disabled=true;$("rp-send").disabled=true;$("rp-hint").disabled=true;$("rp-finish").disabled=true;
+ const answers=rpState.answers;const full=answers.join(" ").toLowerCase();
+ const wordCount=answers.join(" ").trim().split(/\s+/).filter(Boolean).length;
+ const used= ["meiner meinung","ich schlage vor","ich verstehe","wir könnten","ich bin der ansicht","für uns"].filter(x=>full.includes(x));
+ const connectors=["weil","dass","aber","deshalb","außerdem","wenn"].filter(x=>new RegExp("\\b"+x+"\\b").test(full));
+ $("rp-review").innerHTML=`<p><b>Ihre Beiträge :</b> ${answers.length} · <b>Wörter :</b> ${wordCount}</p><p><b>Redemittel verwendet :</b> ${used.length?used.join(", "):"Noch keine typischen Redemittel erkannt."}</p><p><b>Verbindungswörter :</b> ${connectors.length?connectors.join(", "):"Verwenden Sie zum Beispiel weil, dass, aber oder außerdem."}</p><p><b>Zur Verbesserung :</b> Ergänzen Sie Ihre Meinung durch einen Grund (weil …), reagieren Sie auf l'argument de votre interlocuteur et terminez par une proposition concrète.</p><p><b>Zum Schluss :</b> Schreiben Sie ein kurzes Protokoll mit Thema, Problem, Entscheidung, Verantwortlichen und nächstem Termin.</p>`;
+ $("rp-step").textContent="Gespräch beendet";
+}
+function escapeHTML(str){return str.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+$("rp-new").addEventListener("click",rpNew);
+$("rp-send").addEventListener("click",rpSend);
+$("rp-hint").addEventListener("click",rpHint);
+$("rp-finish").addEventListener("click",rpFinish);
+
+
+// Questions supplémentaires : banque élargie pour varier les séries.
+BANK.puma.quiz.push(
+ ["Auf welche vier Bereiche möchte Puma sich konzentrieren?",["Fußball, Running, Training und Sportstyle.","Autos, Energie, Mode und Reisen.","Nur Fußball und Tennis."],0,"sich konzentrieren auf = se concentrer sur"],
+ ["Warum sind die Lager ein Problem?",["Sie sind zu voll.","Sie sind geschlossen.","Sie sind zu weit vom Büro entfernt."],0,"zu voll = trop remplis"],
+ ["Was soll ab 2027 passieren?",["Puma möchte wieder wachsen.","Puma möchte alle Geschäfte schließen.","Puma möchte keine Werbung machen."],0,"wachsen = croître / se développer"],
+ ["Welche Information ist für die Mitarbeiter wichtig?",["Sie sollen früh und ehrlich informiert werden.","Sie sollen keine Informationen bekommen.","Sie sollen sofort den Arbeitsplatz wechseln."],0,"früh und ehrlich = tôt et honnêtement"],
+ ["Was kann der Vertrieb tun, um Kosten zu senken?",["Weniger Produkte anbieten.","Mehr Produkte lagern.","Alle Kunden verlieren."],0,"anbieten = proposer"],
+ ["Welche Lösung schützt die Marke und spart Geld?",["Wichtige Werbung behalten und Reisekosten reduzieren.","Alle Werbekampagnen stoppen.","Mehr Produkte produzieren."],0,"die Reisekosten = les frais de déplacement"]
+);
+BANK.puma.meeting.push(
+ ["Votre interlocuteur dit que la publicité coûte trop cher. Vous répondez…",["Wir könnten die Werbung besser planen und weniger reisen.","Wir müssen alle Mitarbeiter entlassen.","Die Produktion ist bis 2028 ausgebucht."],0],
+ ["Vous voulez défendre une gamme de produits plus courte.",["Wir sollten uns auf wenige wichtige Produkte konzentrieren.","Wir brauchen mehr Lager.","Wir möchten die Turbinen schneller liefern."],0],
+ ["Vous demandez comment informer les salariés.",["Wie informieren wir die Mitarbeiter über die Maßnahmen?","Wie viel kostet eine Gasturbine?","Wann beginnt der Streik?"],0],
+ ["Vous cherchez un compromis avec le marketing.",["Wir behalten wichtige Werbung und sparen an anderen Kosten.","Wir stoppen jede Werbung sofort.","Wir schließen den Online-Verkauf."],0]
+);
+BANK.vw.quiz.push(
+ ["Warum ist die Konkurrenz für VW ein Problem?",["Andere Unternehmen bieten starke Konkurrenz.","Es gibt zu viele Sportgeschäfte.","Die Kunden wollen keine Autos mehr."],0,"die Konkurrenz = la concurrence"],
+ ["Was möchte IG Metall erreichen?",["Die Arbeitsplätze und Standorte schützen.","Mehr Kündigungen organisieren.","Die Werbung reduzieren."],0,"schützen = protéger"],
+ ["Was bedeutet sozialverträglich?",["Die Beschäftigten möglichst wenig belasten.","Alle Mitarbeiter sofort entlassen.","Die Produktion stoppen."],0,"sozialverträglich = socialement acceptable"],
+ ["Welche Maßnahme kann Mitarbeitern helfen?",["Weiterbildung.","Weniger Sicherheit.","Mehr Kündigungen."],0,"die Weiterbildung = la formation continue"],
+ ["Warum ist ein Streik problematisch?",["Er kann die Produktion und Lieferungen stoppen.","Er macht alle Produkte billiger.","Er bringt automatisch neue Modelle."],0,"der Streik = la grève"],
+ ["Was braucht ein Werk für die Zukunft?",["Neue Modelle und eine klare Perspektive.","Weniger Aufträge und keine Mitarbeiter.","Mehr Werbung für Schuhe."],0,"die Perspektive = la perspective"]
+);
+BANK.vw.meeting.push(
+ ["La direction veut réduire les coûts. Vous proposez…",["Wir können Weiterbildung und kürzere Arbeitszeit prüfen.","Wir sollten alle Werke schließen.","Wir müssen mehr Werbung machen."],0],
+ ["Le comité d'entreprise refuse les licenciements. Vous réagissez…",["Ich verstehe Ihre Sorge. Wir suchen eine Lösung ohne Kündigungen.","Das ist mir egal.","Der Kunde braucht Gasturbinen."],0],
+ ["Vous défendez votre usine.",["Unser Werk braucht neue Modelle und sichere Arbeitsplätze.","Unsere Marke braucht mehr Schuhe.","Die Lieferung ist morgen."],0],
+ ["Vous voulez éviter un conflit.",["Lassen Sie uns gemeinsam eine Lösung finden.","Wir sprechen nicht mehr miteinander.","Wir stoppen alle Gespräche."],0]
+);
+BANK.siemens.quiz.push(
+ ["Warum ist die Nachfrage nach Gasturbinen hoch?",["Viele Rechenzentren brauchen viel Strom.","Puma braucht neue Schuhe.","VW schließt seine Werke."],0,"die Nachfrage = la demande"],
+ ["Was bedeutet 'ausgebucht bis 2028'?",["Die Produktion hat bis 2028 keine freien Plätze.","Die Produktion ist geschlossen.","Alle Kunden haben abgesagt."],0,"ausgebucht = complet / réservé"],
+ ["Was muss die Produktionsleitung prüfen?",["Die freien Kapazitäten und die Mitarbeiter.","Die Werbung von Puma.","Die Arbeitsplätze bei VW."],0,"prüfen = vérifier"],
+ ["Warum ist ein falsches Versprechen gefährlich?",["Der Kunde kann das Vertrauen verlieren.","Die Lager werden kleiner.","Die Mitarbeiter bekommen Urlaub."],0,"das Vertrauen = la confiance"],
+ ["Was kann eine Lösung für den Kunden sein?",["Eine Teillieferung zu einem früheren Zeitpunkt.","Keine Information geben.","Den Auftrag sofort vergessen."],0,"die Teillieferung = la livraison partielle"],
+ ["Was muss am Ende der Besprechung klar sein?",["Der Liefertermin und die nächsten Aufgaben.","Die Farbe der Produkte.","Die Zahl der Werbekampagnen."],0,"die Aufgabe = la tâche"]
+);
+BANK.siemens.meeting.push(
+ ["Le client demande une livraison plus rapide. Vous répondez…",["Wir prüfen, ob eine Teillieferung früher möglich ist.","Wir schließen das Werk.","Wir reduzieren die Werbung."],0],
+ ["La production explique que les capacités sont limitées. Vous proposez…",["Können zusätzliche Mitarbeiter helfen?","Wir brauchen weniger Produkte im Lager.","Wir wollen keine Weiterbildung."],0],
+ ["Vous voulez éviter une promesse irréaliste.",["Wir nennen nur einen Termin, den wir sicher einhalten können.","Wir versprechen eine Lieferung morgen.","Wir geben keine Antwort."],0],
+ ["Vous demandez une confirmation claire.",["Können Sie den Termin schriftlich bestätigen?","Wer vertritt die Mitarbeiter?","Wie sparen wir bei der Werbung?"],0]
+);
+
+const ARGUMENTS={
+puma:[
+ ["Le marketing refuse une forte baisse du budget publicitaire. Quel argument aide à trouver un compromis ?",["Wir behalten wichtige Werbung für unsere Hauptprodukte und sparen bei Geschäftsreisen.","Wir stoppen sofort jede Werbung.","Das Marketing muss alle Kosten allein bezahlen."],0,"die Hauptprodukte = les produits principaux ; die Geschäftsreise = le déplacement professionnel","L'argument protège la visibilité de la marque tout en proposant une économie concrète."],
+ ["Le stock est trop important. Quelle proposition est la plus convaincante ?",["Wir verkaufen zuerst die vorhandenen Produkte und bieten künftig weniger Modelle an.","Wir produzieren noch mehr Produkte.","Wir warten, bis alle Produkte alt sind."],0,"vorhanden = déjà disponible ; künftig = à l'avenir","La proposition agit sur le stock actuel et évite de recréer le même problème."],
+ ["La direction veut économiser rapidement, mais les salariés manquent d'informations. Quel compromis proposer ?",["Wir informieren die Mitarbeiter früh und erklären die Maßnahmen klar.","Wir sagen den Mitarbeitern nichts.","Wir ändern jede Woche die Entscheidung."],0,"früh informieren = informer tôt ; erklären = expliquer","Une communication claire facilite l'acceptation des changements."],
+ ["Le directeur veut réduire les dépenses sans affaiblir la marque. Quel argument relie les deux objectifs ?",["Wir sparen bei internen Kosten, aber investieren weiter in wichtige Produkte.","Wir geben kein Geld mehr aus.","Wir verkaufen nur noch ein Produkt."],0,"interne Kosten = coûts internes ; investieren = investir","La solution distingue les économies possibles des dépenses stratégiques."],
+ ["Le service commercial et le marketing ne sont pas d'accord. Quelle réponse est la plus constructive ?",["Wir können die wichtigsten Produkte gemeinsam auswählen und dafür gezielt werben.","Ihr Vorschlag ist schlecht.","Wir beenden die Besprechung."],0,"gemeinsam = ensemble ; gezielt = de manière ciblée","Elle propose une décision commune et une action précise."],
+ ["Vous devez conclure un compromis sur les économies. Quelle phrase convient ?",["Wir testen diese Maßnahmen drei Monate und prüfen dann das Ergebnis.","Wir entscheiden heute nichts.","Jede Abteilung macht, was sie will."],0,"prüfen = vérifier ; das Ergebnis = le résultat","Un essai limité dans le temps permet d'évaluer la solution."]
+],
+vw:[
+ ["La direction veut réduire les coûts et le syndicat refuse les licenciements. Quel argument peut rapprocher les positions ?",["Wir prüfen zuerst Weiterbildung und kürzere Arbeitszeit, bevor wir Stellen abbauen.","Die Beschäftigten müssen alles akzeptieren.","Wir schließen das Werk sofort."],0,"bevor = avant que ; Stellen abbauen = supprimer des postes","La proposition cherche des alternatives avant les suppressions de postes."],
+ ["Le site industriel craint de perdre son activité. Quel argument est le plus utile ?",["Wenn das Werk neue Modelle bekommt, kann es langfristig Arbeitsplätze sichern.","Das Werk braucht keine Aufträge.","Wir sollten die Produktion stoppen."],0,"langfristig = à long terme ; sichern = préserver","L'argument relie les nouveaux modèles à l'avenir du site et à l'emploi."],
+ ["La direction demande des économies rapides. Quelle réponse reste constructive ?",["Wir können Arbeitszeiten anpassen und gleichzeitig die Beschäftigten weiterbilden.","Wir wollen keine Gespräche.","Wir müssen alle Mitarbeiter entlassen."],0,"anpassen = adapter ; gleichzeitig = en même temps","Elle propose deux mesures concrètes sans commencer par les licenciements."],
+ ["Le risque de grève augmente. Quel argument peut aider les deux parties ?",["Ein gemeinsamer Zeitplan kann Konflikte vermeiden und die Produktion sichern.","Ein Streik ist immer gut für alle.","Wir ignorieren den Betriebsrat."],0,"der Zeitplan = le calendrier ; vermeiden = éviter","Un calendrier partagé donne de la visibilité et réduit les tensions."],
+ ["Le comité d'entreprise demande des garanties. Quelle proposition est la plus crédible ?",["Wir überprüfen die Situation in drei Monaten gemeinsam mit dem Betriebsrat.","Wir versprechen alles, ohne einen Plan.","Wir sprechen nie wieder darüber."],0,"überprüfen = réexaminer ; gemeinsam = ensemble","Un rendez-vous de suivi rend l'engagement vérifiable."],
+ ["Vous cherchez une solution acceptable pour la direction et les salariés. Quel argument est le meilleur ?",["Wir sparen schrittweise und schützen dabei wichtige Arbeitsplätze.","Nur eine Seite muss gewinnen.","Wir treffen keine Entscheidung."],0,"schrittweise = progressivement ; dabei = tout en","Il associe économies progressives et protection de l'emploi."]
+],
+siemens:[
+ ["Le client veut une livraison rapide, mais l'usine est presque complète. Quel compromis proposer ?",["Wir liefern einen Teil früher und den Rest zu einem festen späteren Termin.","Wir versprechen alle Turbinen nächste Woche.","Wir nehmen den Auftrag nicht an, ohne zu prüfen."],0,"der Rest = le reste ; später = plus tard","La livraison partielle répond à l'urgence sans promettre l'impossible."],
+ ["La production dit manquer de personnel. Quel argument est pertinent ?",["Mit zusätzlichen Mitarbeitern können wir prüfen, ob ein früherer Termin möglich ist.","Wir brauchen keine Mitarbeiter.","Der Kunde soll einfach warten."],0,"zusätzlich = supplémentaire ; möglich = possible","La proposition examine une ressource concrète et reste prudente."],
+ ["Le client est prêt à payer davantage. Quelle réponse est la plus professionnelle ?",["Wir prüfen die Mehrkosten und sagen Ihnen, ob eine schnellere Lieferung möglich ist.","Dann liefern wir sofort.","Der Preis ist unwichtig."],0,"die Mehrkosten = les coûts supplémentaires ; prüfen = vérifier","Il faut vérifier la faisabilité et le coût avant de s'engager."],
+ ["Le commercial veut gagner le contrat, la production refuse un délai irréaliste. Quel compromis ?",["Wir suchen gemeinsam den frühesten realistischen Termin und bestätigen ihn schriftlich.","Der Vertrieb entscheidet allein.","Die Produktion muss alles akzeptieren."],0,"frühestmöglich = le plus tôt possible ; schriftlich = par écrit","La décision associe les deux services et garantit un engagement réaliste."],
+ ["Le client a besoin d'électricité rapidement pour son centre de données. Quelle proposition peut aider ?",["Wir prüfen eine erste Teillieferung und planen die weiteren Turbinen später.","Wir ändern le sujet de la réunion.","Wir garantieren einen Termin ohne Prüfung."],0,"die erste Teillieferung = première livraison partielle ; planen = planifier","Elle répond au besoin urgent en répartissant la livraison."],
+ ["Vous devez conclure la réunion. Quelle décision est la plus claire ?",["Die Produktion prüft die Kapazitäten bis Freitag und der Vertrieb informiert den Kunden.","Wir sprechen irgendwann wieder.","Niemand ist verantwortlich."],0,"bis Freitag = d'ici vendredi ; verantwortlich = responsable","La décision indique une tâche, un responsable et une échéance."]
+]};
+function renderArguments(id,bank){
+ const items=sample(bank,4);sessions[id]={items,submitted:false,kind:"arguments"};
+ $(id).innerHTML=items.map((q,i)=>`<div class="question"><div class="qtitle">${i+1}. ${q[0]}</div><div class="lex-help">Aide : ${q[3]}</div><div class="answers">${shuffle(q[1].map((a,j)=>({a,original:j}))).map(x=>`<label class="option"><input type="radio" name="${id}-${i}" value="${x.original}"><span>${x.a}</span></label>`).join("")}</div><div class="feedback" id="${id}-f${i}"></div></div>`).join("");
+ $(id+"-result").classList.remove("show");
+}
+
+function renderAll(){
+ for(const [company,b] of Object.entries(BANK)){
+  renderQuiz(company+"-quiz",b.quiz);renderWords(company+"-words",b.words);renderMeeting(company+"-meeting",b.meeting);renderArguments(company+"-arguments",ARGUMENTS[company]);
+ }
+}
+function markDone(id,score,max){
+ if(!completed.has(id)){completed.add(id);totalPoints+=score;maxPoints+=max;saveProgress()}
+ updateProgress();
+}
+function updateProgress(){
+ $("doneCount").textContent=completed.size+"/12";$("scoreCount").textContent=totalPoints+"/"+maxPoints;
+ $("progressBar").style.width=(completed.size/12*100)+"%";
+ $("progressText").textContent=completed.size===12?"Toutes les activités sont terminées. Bravo !":(12-completed.size)+" activité(s) encore à terminer.";
+}
+function check(id){
+ const s=sessions[id];if(!s||s.submitted)return;
+ let score=0,answered=0;const max=s.items.length;
+ s.items.forEach((q,i)=>{
+  let val,correct;
+  if(s.kind==="words"){val=$(id+"-a"+i).value;correct=q[1].replace(/[.!?]/g,"").trim();if(!val){$(""+id+"-f"+i).textContent="Choisis une réponse.";return}answered++;const ok=val.toLowerCase()===correct.toLowerCase();if(ok)score++;$(""+id+"-f"+i).innerHTML=ok?'<span class="correct">Correct !</span>':`<span class="wrong">Réponse : ${correct}</span>`;}
+  else{const selected=document.querySelector(`input[name="${id}-${i}"]:checked`);if(!selected){$(id+"-f"+i).textContent="Choisis une réponse.";return}answered++;const ok=Number(selected.value)===q[2];if(ok)score++;const explanation=s.kind==="arguments"?`<br><span class="small">${q[4]}</span>`:"";$(id+"-f"+i).innerHTML=(ok?'<span class="correct">Bonne stratégie.</span>':`<span class="wrong">Argument conseillé : ${q[1][q[2]]}</span>`)+explanation;}
+ });
+ if(answered<max){$(id+"-result").classList.add("show");$(id+"-result").innerHTML=`<strong>${answered}/${max} réponses données.</strong> Réponds à toutes les questions, puis vérifie à nouveau. Score provisoire : ${score}/${max}.`;return}
+ s.submitted=true;
+ document.querySelectorAll(`#${id} input, #${id} select`).forEach(el=>el.disabled=true);
+ const res=$(id+"-result");res.classList.add("show");res.innerHTML=`<strong>Résultat : ${score}/${max}.</strong> ${score===max?"Excellent, tout est juste !":score>=3?"Bon travail. Relis les corrections pour progresser.":"Reprends le vocabulaire et le contexte, puis tente une nouvelle série."}`;
+ markDone(id,score,max);
+}
+function retry(id){
+ const parts=id.split("-"),company=parts[0],kind=parts.slice(1).join("-");
+ if(!BANK[company])return;
+ if(kind==="quiz")renderQuiz(id,BANK[company].quiz);
+ if(kind==="words")renderWords(id,BANK[company].words);
+ if(kind==="meeting")renderMeeting(id,BANK[company].meeting);
+ if(kind==="arguments")renderArguments(id,ARGUMENTS[company]);
+}
+document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tab)));
+function showTab(id){document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("active",b.dataset.tab===id));document.querySelectorAll(".panel").forEach(p=>p.classList.toggle("active",p.id===id));window.scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.go)));
+document.querySelectorAll("[data-check]").forEach(b=>b.addEventListener("click",()=>check(b.dataset.check)));
+document.querySelectorAll("[data-retry]").forEach(b=>b.addEventListener("click",()=>retry(b.dataset.retry)));
+$("resetAll").addEventListener("click",()=>{if(!confirm("Effacer les activités terminées et les points ?"))return;completed.clear();totalPoints=0;maxPoints=0;saveProgress();renderAll();updateProgress();showTab("start")});
+renderAll();updateProgress();
+// Les exercices ne sont jamais renouvelés automatiquement : seul le bouton « Nouvelle série » le fait.
+
+// Limiter la traduction automatique et la copie de contenu, comme sur Deutsche Demokratie.
+["contextmenu","copy","cut"].forEach(ev=>document.addEventListener(ev,e=>{if(!e.target.closest("input,textarea,select"))e.preventDefault()}));
+document.addEventListener("selectstart",e=>{if(!e.target.closest("input,textarea,select"))e.preventDefault()});
+document.addEventListener("keydown",e=>{const k=e.key.toLowerCase();if((e.ctrlKey||e.metaKey)&&["c","x","a","p","s","u"].includes(k)&&!e.target.closest("input,textarea,select"))e.preventDefault()});
+</script>
+</body>
+</html>
