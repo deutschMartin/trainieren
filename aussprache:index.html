@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deutsche Aussprache</title>
+<style>
+:root{--bg:#eef2f6;--card:#fff;--ink:#17243a;--line:#c9d3df;--accent:#2447a8;--on:#fff;--mark:#b3261e;--ok:#176b45;color-scheme:light}
+:root.dark{--bg:#121a27;--card:#1b2637;--ink:#e8edf5;--line:#34435b;--accent:#9db6ff;--on:#10192b;--mark:#ff9d8f;--ok:#7bd6a6;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,sans-serif;overflow-wrap:break-word}
+main{max-width:720px;margin:auto;padding:16px 16px calc(96px + env(safe-area-inset-bottom,0px))}
+.haut{text-align:right}
+header{text-align:center;margin:20px 0}
+h1{margin:0;font-size:clamp(1.6rem,7vw,2.3rem)}
+header p{margin:4px 0;font-style:italic}
+h2{font-size:1.2rem;margin:0 0 8px}
+nav{position:sticky;top:0;z-index:10;background:var(--bg);padding:calc(10px + env(safe-area-inset-top,0px)) 0 10px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+button,select{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 14px;min-height:44px;max-width:100%;cursor:pointer;touch-action:manipulation}
+button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--on)}
+nav button{font-size:1.15rem;font-weight:700;padding:12px 4px;border:2px solid var(--accent)}
+.vitesse{text-align:center;margin:8px 0}
+section{background:var(--card);border-radius:14px;padding:22px 18px;margin:24px 0}
+section>p{margin:0 0 14px}
+.mot{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:14px 0;border-top:1px solid var(--line)}
+.mot span{flex:1;min-width:0;font-size:1.2rem}
+.nouveaux{width:100%;margin-top:10px}
+.choix{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+b{color:var(--mark)}.accent b{text-decoration:underline}
+.sans b{color:inherit;font-weight:400;text-decoration:none}
+.ok{color:var(--ok)}.non{color:var(--mark)}
+#marque{position:fixed;z-index:11;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));box-shadow:0 3px 12px #0005}
+footer{text-align:center;padding:20px}
+body{font-size:19px;line-height:1.7}
+section{padding:26px 20px;margin:28px 0}
+h2{font-size:1.4rem;line-height:1.35;margin-bottom:14px}
+h3{font-size:1.1rem;margin:22px 0 8px}
+section>p{font-size:1.15rem;margin-bottom:18px}
+dl{margin:0 0 24px;font-size:1.08rem}
+dl div{display:grid;grid-template-columns:3.6em 1fr;gap:10px;padding:8px 0}
+dt{font-weight:700}dd{margin:0}
+.mot{padding:18px 0}.mot span{font-size:1.4rem}
+select{width:100%;margin-bottom:8px}
+nav{margin-bottom:8px}
+progress{width:100%;height:10px;accent-color:var(--accent)}
+.ecoute{display:block;margin:28px auto;min-width:200px;min-height:64px;border-radius:32px;background:var(--accent);border-color:var(--accent);color:var(--on);font-weight:700}
+.choix{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:0}
+.choix button{min-height:84px;font-size:1.5rem;border-width:2px;border-radius:16px}
+.choix button:disabled{cursor:default;color:var(--ink);opacity:.65}
+.choix button.bon,.choix button.faux{opacity:1;border-width:3px}
+.choix .bon{border-color:var(--ok);color:var(--ok)!important}
+.choix .faux{border-color:var(--mark);color:var(--mark)!important}
+.retour{text-align:center;font-weight:700;min-height:1.7em;margin:16px 0!important}
+.suite{display:block;width:100%;min-height:56px}
+footer{position:fixed;z-index:10;left:0;right:0;bottom:0;background:var(--bg);font-size:.8rem;padding:6px 0 calc(6px + env(safe-area-inset-bottom,0px))}
+#marque{bottom:calc(46px + env(safe-area-inset-bottom,0px))}
+main{padding-bottom:calc(120px + env(safe-area-inset-bottom,0px))}
+summary{cursor:pointer;font-weight:700;padding:16px 0;margin-top:12px}
+.paire{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.mot span{font-size:1.55rem;letter-spacing:.02em}
+.mot b{font-weight:900}
+section>p strong{font-weight:900;color:var(--mark);font-size:1.12em}
+.sans .mot b{font-weight:400}
+.joue{display:flex;align-items:center;gap:10px;text-align:left}
+.joue::before{content:"";flex:none;border-left:11px solid currentColor;border-top:7px solid transparent;border-bottom:7px solid transparent}
+button b{font-weight:900}
+.regle{padding:14px 0;border-top:1px solid var(--line)}
+.regle p{font-size:1.15rem;margin:0 0 10px}
+.regle strong{font-weight:900;color:var(--mark);font-size:1.12em}
+.exemple{display:inline-flex;margin:0 10px 6px 0;font-size:1.2rem}
+.paire{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}
+.ecoute.joue{display:flex;justify-content:center;width:max-content;margin:28px auto;padding:8px 32px}
+[hidden]{display:none!important}
+.mini{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;min-height:40px;padding:4px 10px;border-radius:20px}
+.sw{position:relative;width:44px;height:24px;border-radius:12px;background:#7b8798}
+.sw::before{content:"";position:absolute;z-index:1;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:left .15s}
+.sw::after{content:"";position:absolute;right:6px;top:7px;width:6px;height:6px;border:2px solid #fff;border-radius:50%}
+[aria-checked=true] .sw{background:#2447a8}
+[aria-checked=true] .sw::before{left:23px}
+[aria-checked=true] .sw::after{right:auto;left:11px;top:6px;width:2px;height:12px;border:0;border-radius:1px;background:#fff}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.menu button{min-height:76px;font-weight:700;line-height:1.35;padding:10px}
+.menu button:last-child:nth-child(odd){grid-column:1/-1}
+.retourmenu{margin-top:8px;scroll-margin-top:90px}
+section{margin:16px 0}
+.jeu{text-align:center;scroll-margin-top:90px}
+.grand{font-size:3.5rem;line-height:1.3}
+.etoiles{color:#d99a00}
+.points{display:grid;grid-template-columns:repeat(5,34px);justify-content:center;gap:10px}
+.points span{height:34px;border-radius:50%;border:2px solid var(--line);font-size:.85rem;font-weight:700;line-height:30px}
+.points .actuel{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent)}
+.points .bon{background:var(--ok);border-color:var(--ok);color:var(--card)}
+.points .faux{background:var(--mark);border-color:var(--mark);color:var(--card)}
+.serie{font-weight:700;margin-top:18px!important}
+.principal{background:var(--accent);border-color:var(--accent);color:var(--on);font-weight:700}
+.suite{margin-top:14px}
+.cible{border:3px solid var(--ok)}
+@media (prefers-reduced-motion:no-preference){.choix .bon{animation:pop .35s}@keyframes pop{50%{transform:scale(1.05)}}}
+.niveau{display:block;width:100%;margin:16px 0;padding:16px;border:2px solid var(--accent);border-radius:16px}
+.niveau strong{display:block;font-size:1.25rem}.niveau span{display:block;font-size:.95rem}
+.choix.quatre{grid-template-columns:1fr 1fr;gap:12px}
+.choix.quatre button{font-size:1.25rem;padding:8px 4px}
+button,summary{-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+button{transition:transform .12s ease,filter .12s ease}
+button:not(:disabled):active{transform:scale(.97);filter:brightness(.95)}
+button:focus,summary:focus{outline:none}
+button:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){button{transition:none}button:active{transform:none!important}}
+.choix .bon{animation:none!important}
+body,section,button,select,footer,nav{transition:background-color .35s ease,color .35s ease,border-color .35s ease}
+button{transition:transform .12s ease,filter .12s ease,background-color .35s ease,color .35s ease,border-color .35s ease}
+details[open] .paire{animation:apparait .35s ease}
+@keyframes apparait{from{opacity:0}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<main>
+<div class="haut"><button id="sombre" class="mini" role="switch" aria-checked="false"><span lang="de">Dunkelmodus</span><i class="sw" aria-hidden="true"></i></button></div>
+<header><h1 lang="de">Deutsche Aussprache</h1><p>Prononciation allemande</p></header>
+<nav>
+<button data-tab="lernen">Lernen</button>
+<button data-tab="ueben">Üben</button>
+<button data-tab="training">Training</button>
+</nav>
+<div id="app"></div>
+<button id="marque" class="mini" role="switch" aria-checked="true">Marquage<i class="sw" aria-hidden="true"></i></button>
+<footer>Herr Martin</footer>
+</main>
+<script>
+// [titre, conseil, mots (son entre crochets), paires minimales]
+const S=[
+["Voyelles longues et brèves","Longues [aː] [iː] [oː] : tenez le son. Brèves [a] [ɪ] [ɔ] : coupez-le.",
+"St[aa]t|St[a]dt|M[ie]te|M[i]tte|[O]fen|[o]ffen|B[ah]n|B[a]nk|B[ee]t|B[e]tt|S[ee]|S[o]nne|l[e]ben|k[o]mmen|F[a]hrrad|S[o]hn|W[i]nter|Z[u]g",
+"Staat Stadt,Miete Mitte,Ofen offen,Bahn Bann,Beet Bett,bieten bitten,Schal Schall,raten Ratten,den denn,spuken spucken,Sohn Sonne,Wahl Wall,kam Kamm,schief Schiff,Mus muss"],
+["ü [yː] [ʏ] et ö [øː] [œ]","[yː] : dites [i] en arrondissant les lèvres. [øː] : dites [e] en arrondissant les lèvres.",
+"f[ü]hlen|f[ü]nf|sch[ö]n|zw[ö]lf|Pr[ü]fung|m[ö]glich|[ü]ben|Gl[ü]ck|K[ö]nig|[ö]ffnen|B[ü]cher|Br[ü]cke|h[ö]ren|L[ö]ffel|nat[ü]rlich|Fr[ü]hst[ü]ck",
+"fühlen füllen,Höhle Hölle,vier für,lesen lösen,Kiste Küste,kennen können,schon schön,Mutter Mütter,Bruder Brüder,Tier Tür,Hüte Hütte"],
+["[ç], [x] et [ʃ]","[ç] après {e}, {i}, {ä}, {ö}, {ü} et consonne ; [x] après {a}, {o}, {u}. La finale {-ig} se prononce [ɪç] en allemand standard.",
+"i[ch]|Bu[ch]|Mäd[ch]en|na[ch]|wicht[ig]|Geschi[ch]te|Mil[ch]|Da[ch]|Ko[ch]|Kü[ch]e|[Sch]ule|zwanz[ig]|mö[ch]ten|Spra[ch]e|richt[ig]|Fi[sch]",
+"Kirche Kirsche,mich misch,Fichte fischte,Wicht wischt,Gicht Gischt,keuche keusche,Löcher Löscher,wich wisch,Nacht nackt"],
+["[h] et coup de glotte [ʔ]","[h] se souffle. Devant une voyelle initiale, l’attaque [ʔ] est nette.",
+"[H]aus|[H]offnung|be[a]chten|ver[ei]sen|[h]eute|am [A]bend|[H]immel|ge[h]ören|Spiegel[ei]|[H]erbst|[a]lt|[h]alt|The[a]ter|[H]eimat|[o]ft|[H]andy",
+"Haus aus,Hund und,Hecke Ecke,heben eben,hoffen offen,Herz Erz,Halle alle,hier ihr"],
+["[ts], [z], [ʃp] et [ʃt]","{z} se dit [ts]. {s} devant voyelle se dit [z]. En début de mot, {sp} et {st} se disent [ʃp] et [ʃt].",
+"[Z]eit|[S]onne|[Z]ukunft|Gesell[s]chaft|[Sp]rache|[St]udium|[Z]ahl|[S]ommer|Pi[zz]a|[St]raße|[Sp]ort|Poli[z]ei|[S]ache|[z]wischen|Ver[st]ändnis|Pla[tz]",
+"Zeit seit,Zoo so,Zahl Saal,Ziege Siege,heizen heißen,Katze Kasse,reizen reisen"],
+["[ɐ] et durcissement final","{-er} et {r} après voyelle longue tendent vers [ɐ]. En finale, {b}, {d}, {g} se disent [p], [t], [k].",
+"Lehr[er]|Uh[r]|Ra[d]|Ta[g]|hal[b]|Verban[d]|Wass[er]|Tü[r]|Kin[d]|Ber[g]|gel[b]|Mutt[er]|Bie[r]|Hun[d]|We[g]|Urlau[b]",""],
+["[ŋ] et [ŋk]","{ng} : un seul son [ŋ], sans [g] audible. {nk} : [ŋk].",
+"si[ng]en|Zeitu[ng]|da[nk]en|Wohnu[ng]|la[ng]|Ba[nk]|Fi[ng]er|de[nk]en|Ju[ng]e|tri[nk]en|Übu[ng]|Gesche[nk]|E[ng]land|pü[nk]tlich",
+"singen sinken,Engel Enkel,sengen senken,Schlange schlanke,sang sank,bang Bank,rangen ranken"],
+["Accent de mot","La syllabe soulignée porte l’accent. Les particules séparables sont accentuées, les inséparables non.",
+"[an]kommen|be[kom]men|Universi[tät]|Demokra[tie]|[Um]weltschutz|er[zäh]len|[auf]stehen|ver[ste]hen|[ein]kaufen|ent[schei]den|Stu[dent]|Mu[sik]|[Ar]beit|Poli[tik]|Infor[ma]tik|[mit]machen",""],
+["Phrases et virelangues","D’abord lentement, puis à vitesse normale.",
+"F[i]schers Fr[i]tz f[i]scht fr[i]sche F[i]sche.|[Z]ehn [z]ahme [Z]iegen [z]ogen [z]um [Z]oo.|I[ch] mö[ch]te na[ch] Mün[ch]en.|Die Pr[ü]fung ist [ü]berraschend schw[ie]rig.|Bl[au]kr[au]t bleibt Bl[au]kr[au]t und Br[au]tkleid bleibt Br[au]tkleid.|In [U]lm und [u]m [U]lm und [u]m [U]lm her[u]m.|Sch[ö]ne Gr[ü]ße aus [Ö]sterreich.|[H]eute [h]abe ich [H]unger.|Wir [sp]rechen über Umweltschu[tz].|Zwi[sch]en zwei Zwet[sch]genzweigen si[tz]en zwei [z]wit[sch]ernde [Sch]walben.",""]
+].map(x=>[x[0],x[1],x[2].split('|'),x[3]?x[3].split(',').map(p=>p.split(' ')):[]]);
+const E=[
+[["aː","« a » de « pâte », tenu"],["a","« a » de « patte »"],["iː","« i » de « lit », tenu"],["ɪ","entre « i » et « é », bref"],["oː","« o » de « rose », tenu"],["ɔ","« o » de « porte »"]],
+[["yː","« u » de « mur », tenu"],["ʏ","entre « u » et « eu », bref"],["øː","« eu » de « deux », tenu"],["œ","« eu » de « peur », bref"]],
+[["ç","proche du « i » de « pied » chuchoté"],["x","proche du « r » de « très »"],["ʃ","« ch » de « chat »"]],
+[["h","pas d’équivalent : un souffle, comme l’anglais « house »"],["ʔ","attaque nette d’un « Ah ! » insistant"]],
+[["ts","« ts » de « tsé-tsé »"],["z","« z » de « zéro »"],["ʃp","« ch » de « chat » suivi de « p »"],["ʃt","« ch » de « chat » suivi de « t »"]],
+[["ɐ","entre « a » et « eu », très bref"],["p","« p » de « cap »"],["t","« t » de « patte »"],["k","« c » de « sac »"]],
+[["ŋ","« ng » de « parking », sans « g » final"],["ŋk","« nk » de « funk »"]],
+[],[]
+];
+const PM={"Gicht Gischt":["Gi[ch]t","Gi[sch]t"],"keuche keusche":["keu[ch]e","keu[sch]e"],"Löcher Löscher":["Lö[ch]er","Lö[sch]er"],"wich wisch":["wi[ch]","wi[sch]"],"Nacht nackt":["Na[ch]t","na[ck]t"],"sang sank":["sa[ng]","sa[nk]"],"bang Bank":["ba[ng]","Ba[nk]"],"rangen ranken":["ra[ng]en","ra[nk]en"],"Sohn Sonne": ["S[oh]n", "S[o]nne"], "Wahl Wall": ["W[ah]l", "W[a]ll"], "kam Kamm": ["k[a]m", "K[a]mm"], "schief Schiff": ["sch[ie]f", "Sch[i]ff"], "Mus muss": ["M[u]s", "m[u]ss"], "Hüte Hütte": ["H[ü]te", "H[ü]tte"], "Staat Stadt": ["St[aa]t", "St[a]dt"], "Miete Mitte": ["M[ie]te", "M[i]tte"], "Ofen offen": ["[O]fen", "[o]ffen"], "Bahn Bann": ["B[ah]n", "B[a]nn"], "Beet Bett": ["B[ee]t", "B[e]tt"], "bieten bitten": ["b[ie]ten", "b[i]tten"], "Schal Schall": ["Sch[a]l", "Sch[a]ll"], "raten Ratten": ["r[a]ten", "R[a]tten"], "den denn": ["d[e]n", "d[e]nn"], "spuken spucken": ["sp[u]ken", "sp[u]cken"], "fühlen füllen": ["f[üh]len", "f[ü]llen"], "Höhle Hölle": ["H[öh]le", "H[ö]lle"], "vier für": ["v[ie]r", "f[ü]r"], "lesen lösen": ["l[e]sen", "l[ö]sen"], "Kiste Küste": ["K[i]ste", "K[ü]ste"], "kennen können": ["k[e]nnen", "k[ö]nnen"], "schon schön": ["sch[o]n", "sch[ö]n"], "Mutter Mütter": ["M[u]tter", "M[ü]tter"], "Bruder Brüder": ["Br[u]der", "Br[ü]der"], "Tier Tür": ["T[ie]r", "T[ü]r"], "Kirche Kirsche": ["Kir[ch]e", "Kir[sch]e"], "mich misch": ["mi[ch]", "mi[sch]"], "Fichte fischte": ["Fi[ch]te", "fi[sch]te"], "Wicht wischt": ["Wi[ch]t", "wi[sch]t"], "Haus aus": ["[H]aus", "[au]s"], "Hund und": ["[H]und", "[u]nd"], "Hecke Ecke": ["[H]ecke", "[E]cke"], "heben eben": ["[h]eben", "[e]ben"], "hoffen offen": ["[h]offen", "[o]ffen"], "Herz Erz": ["[H]erz", "[E]rz"], "Halle alle": ["[H]alle", "[a]lle"], "hier ihr": ["[h]ier", "[ih]r"], "Zeit seit": ["[Z]eit", "[s]eit"], "Zoo so": ["[Z]oo", "[s]o"], "Zahl Saal": ["[Z]ahl", "[S]aal"], "Ziege Siege": ["[Z]iege", "[S]iege"], "heizen heißen": ["hei[z]en", "hei[ß]en"], "Katze Kasse": ["Ka[tz]e", "Ka[ss]e"], "reizen reisen": ["rei[z]en", "rei[s]en"], "singen sinken": ["si[ng]en", "si[nk]en"], "Engel Enkel": ["E[ng]el", "E[nk]el"], "sengen senken": ["se[ng]en", "se[nk]en"], "Schlange schlanke": ["Schla[ng]e", "schla[nk]e"]};
+const R=[[["Longues [aː] [iː] [oː] : tenez le son.", ["St[aa]t", "M[ie]te", "[O]fen"]], ["Brèves [a] [ɪ] [ɔ] : coupez-le.", ["St[a]dt", "M[i]tte", "[o]ffen"]]], [["[yː] : dites [i] en arrondissant les lèvres.", ["f[üh]len"]], ["[ʏ] : le son bref, plus relâché.", ["f[ü]llen"]], ["[øː] : dites [e] en arrondissant les lèvres.", ["H[öh]le"]], ["[œ] : le son bref, plus ouvert.", ["H[ö]lle"]]], [["[ç] après {e}, {i}, {ä}, {ö}, {ü} et consonne.", ["i[ch]", "Mil[ch]"]], ["[x] après {a}, {o}, {u}.", ["Bu[ch]", "na[ch]"]], ["{sch} se dit [ʃ].", ["[Sch]ule"]], ["La finale {-ig} se prononce [ɪç] en allemand standard.", ["wicht[ig]"]]], [["[h] se souffle.", ["[H]aus"]], ["Devant une voyelle initiale, l’attaque [ʔ] est nette.", ["am [A]bend"]]], [["{z} se dit [ts].", ["[Z]eit"]], ["{s} devant voyelle se dit [z].", ["[S]onne"]], ["En début de mot, {sp} se dit [ʃp].", ["[Sp]ort"]], ["En début de mot, {st} se dit [ʃt].", ["[St]raße"]]], [["{-er} tend vers [ɐ].", ["Lehr[er]"]], ["{r} après voyelle longue aussi.", ["Uh[r]"]], ["En finale, {b} se dit [p].", ["hal[b]"]], ["En finale, {d} se dit [t].", ["Ra[d]"]], ["En finale, {g} se dit [k].", ["Ta[g]"]]], [["{ng} : un seul son [ŋ], sans [g] audible.", ["si[ng]en"]], ["{nk} : [ŋk].", ["da[nk]en"]]], [["La syllabe soulignée porte l’accent. Les particules séparables sont accentuées.", ["[an]kommen"]], ["Les particules inséparables ne le sont pas.", ["be[kom]men"]]], [["Écoutez, puis répétez lentement avant d’accélérer.", []]]];
+const app=document.getElementById('app'),$=id=>document.getElementById(id);
+const net=t=>t.replace(/[\[\]]/g,'');
+const html=t=>t.replace(/\[(.*?)\]/g,'<b>$1</b>');
+// Voix de meilleure qualité en priorité, parmi celles installées sur l’appareil
+const note=v=>(/natural|neural|premium|enhanced|siri/i.test(v.name+v.voiceURI)?4:0)+(/google/i.test(v.name)?2:0)+(v.lang.replace('_','-')==='de-DE'?1:0)-(/compact|espeak|eloquence/i.test(v.name+v.voiceURI)?4:0);
+if(window.speechSynthesis)speechSynthesis.getVoices();
+// Contraste de longueur accentué : voyelle longue plus lente, brève plus rapide
+const LONGS='Staat Miete Ofen Bahn Beet bieten Schal raten den spuken Sohn Wahl kam schief Mus'.split(' ');
+const BREFS='Stadt Mitte offen Bann Bett bitten Schall Ratten denn spucken Sonne Wall Kamm Schiff muss'.split(' ');
+function dire(t){
+ if(!window.speechSynthesis){alert('La synthèse vocale n’est pas disponible sur ce navigateur.');return}
+ speechSynthesis.cancel();
+ const u=new SpeechSynthesisUtterance(t);u.lang='de-DE';
+ const v=speechSynthesis.getVoices().filter(v=>v.lang.startsWith('de')).sort((a,b)=>note(b)-note(a))[0];
+ if(v)u.voice=v;
+ const syllabes=(t.match(/[aeiouyäöü]+/gi)||[]).length;
+ u.rate=t.includes(' ')?.7:syllabes<2?.45:.6;
+ if(LONGS.includes(t)){u.rate=.4;u.text=({den:'dehn',Mus:'Muhs'}[t]||t)+'.'}
+ else if(BREFS.includes(t)){u.rate=.85;u.text=t+'.'}
+ speechSynthesis.speak(u);
+}
+function bouton(txt,fn){const b=document.createElement('button');b.type='button';b.textContent=txt;b.onclick=fn;return b}
+const melange=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function audio(m,classe){
+ const x=bouton('',()=>dire(net(m)));x.className='joue '+classe;x.lang='de';x.innerHTML=`<span>${html(m)}</span>`;return x;
+}
+function lernen(){
+ S.forEach(([titre,conseil,mots],i)=>{
+  const s=document.createElement('section'),z=document.createElement('div');
+  if(titre.startsWith('Accent'))s.className='accent';
+  s.innerHTML=`<h2>${titre}</h2>`;
+  R[i].forEach(([texte,exemples])=>{
+   const r=document.createElement('div');r.className='regle';
+   r.innerHTML=`<p>${texte.replace(/\{(.*?)\}/g,'<strong>$1</strong>')}</p>`;
+   exemples.forEach(m=>r.append(audio(m,'exemple')));s.append(r);
+  });
+  if(E[i].length)s.insertAdjacentHTML('beforeend','<h3>Repères en français</h3><dl>'+E[i].map(([api,fr])=>`<div><dt>[${api}]</dt><dd>${fr}</dd></div>`).join('')+'</dl>');
+  const n=titre.startsWith('Phrases')?4:6;
+  let pile=melange(mots);
+  const remplir=()=>{
+   if(pile.length<n)pile=pile.concat(melange(mots.filter(m=>!pile.includes(m))));
+   z.innerHTML='';fondu(z);
+   pile.splice(0,n).forEach(m=>{
+    const d=document.createElement('div');d.className='mot';d.innerHTML=`<span lang="de">${html(m)}</span>`;
+    d.append(bouton('Hören',()=>dire(net(m))));z.append(d);
+   });
+  };
+  const b=bouton(n===4?'Nouvelles phrases':'Nouveaux mots',remplir);b.className='nouveaux';
+  remplir();s.append(z,b);
+  if(S[i][3].length){
+   const det=document.createElement('details');det.innerHTML=`<summary>Paires à comparer (${S[i][3].length})</summary>`;
+   S[i][3].forEach(paire=>{
+    const d=document.createElement('div');d.className='paire';
+    (PM[paire.join(' ')]||paire).forEach(m=>d.append(audio(m,'joue')));det.append(d);
+   });
+   s.append(det);
+  }
+  app.append(s);
+ });
+ sommaire();
+}
+const COURT=['Voyelles longues et brèves','ü et ö','ch et sch','h et coup de glotte','z, s, sp, st','r et fins de mots','ng et nk','Accent de mot','Phrases'];
+function sommaire(){
+ const secs=[...app.querySelectorAll('section')];
+ const menu=document.createElement('div');menu.className='menu';
+ const montrer=i=>{
+  menu.hidden=i!==null;secs.forEach((x,j)=>x.hidden=j!==i);
+  retour.hidden=suivant.hidden=$('marque').hidden=i===null;courant=i;
+  if(i!==null){retour.scrollIntoView();suivant.textContent=`Suivant : ${COURT[(i+1)%secs.length]} ›`}
+  fondu(app);
+ };
+ let courant=null;
+ const retour=bouton('‹ Menu',()=>{montrer(null);menu.scrollIntoView({block:'center'})});retour.className='retourmenu';
+ const suivant=bouton('Son suivant ›',()=>montrer((courant+1)%secs.length));suivant.className='suite';
+ COURT.forEach((t,i)=>menu.append(bouton(t,()=>montrer(i))));
+ app.prepend(menu,retour);app.append(suivant);montrer(null);
+}
+function fondu(el){
+ if(el.animate&&!matchMedia('(prefers-reduced-motion:reduce)').matches)el.animate([{opacity:0},{opacity:1}],{duration:350,easing:'ease-in-out'});
+}
+const hasard=n=>Math.floor(Math.random()*n);
+function question(zone,paire,suite,reponse){
+ const juste=paire[hasard(paire.length)];let fini=false;
+ const ecoute=bouton('Hören',()=>dire(juste));ecoute.className='ecoute joue';
+ const choix=document.createElement('div');choix.className='choix'+(paire.length>2?' quatre':'');
+ const info=document.createElement('p');info.className='retour';info.setAttribute('aria-live','polite');
+ const boutons=melange(paire).map(mot=>{
+  const b=bouton(mot,()=>{
+   if(fini)return;fini=true;
+   const ok=mot===juste;
+   boutons.forEach(x=>{x.disabled=true;if(x.textContent===juste){x.classList.add('bon');x.textContent+=' ✓'}});
+   if(!ok){b.classList.add('faux');b.textContent+=' ✗'}
+   info.classList.add(ok?'ok':'non');info.textContent=ok?'Richtig!':'Falsch';
+   const w=bouton('Weiter',()=>suite(ok,juste,paire));w.className='suite';zone.append(w);if(reponse)reponse(ok);
+  });
+  b.lang='de';return b;
+ });
+ choix.append(...boutons);zone.append(ecoute,choix,info);
+}
+function ueben(){
+ const s=document.createElement('section'),sel=document.createElement('select'),compte=document.createElement('p'),z=document.createElement('div');
+ sel.setAttribute('aria-label','Son à travailler');
+ sel.add(new Option('Tous les sons mélangés','tous'));
+ S.forEach((x,i)=>{if(x[3].length)sel.add(new Option(x[0],i))});
+ s.innerHTML='<h2>Quel mot entendez-vous ?</h2>';compte.className='serie';
+ // chaque paire passe une fois avant qu’une autre ne revienne
+ let pile=[],total=0,derniere=null;
+ const paires=()=>sel.value==='tous'?S.flatMap(x=>x[3]):S[sel.value][3];
+ const nouvelle=()=>{
+  if(!pile.length){pile=melange(paires());total=pile.length;if(pile.length>1&&pile[pile.length-1]===derniere)pile.unshift(pile.pop())}
+  derniere=pile.pop();compte.textContent=`${total-pile.length}/${total}`;
+  z.innerHTML='';question(z,derniere,nouvelle);fondu(z);
+ };
+ sel.onchange=()=>{pile=[];nouvelle()};s.append(sel,compte,z);app.append(s);nouvelle();
+}
+const PIEGES='Zahl Saal Schal Schall,Kirche Kirsche Küche Kiste,fühlen füllen fielen fehlen,Höhle Hölle Halle hohle,vier für vor fuhr,lesen lösen lasen losen,schon schön Sohn schien,Miete Mitte Matte Motte,Ofen offen hoffen Hafen,bieten bitten beten Betten,Bahn Bann Bein Bühne,Hecke Ecke Hacke Haken,Zoo so zu Schuh,singen sinken sengen senken,Wicht wischt wacht wäscht,mich misch Milch Mist,heizen heißen Eisen reizen,reisen reizen reißen rasen,Katze Kasse Gasse Tatze'.split(',').map(x=>x.split(' '));
+const serieDe=dur=>melange(dur?PIEGES:S.flatMap(x=>x[3])).slice(0,10);
+const CLE='aussprache-record';
+const lireRecord=dur=>{try{return +localStorage.getItem(CLE+(dur?'-difficile':''))||0}catch(e){return 0}};
+function training(){
+ const s=document.createElement('section');s.className='jeu';app.append(s);
+ s.innerHTML='<div class="grand">🎧</div><h2>Bereit? Prêt ?</h2><p>10 questions : choisissez votre niveau.</p>';
+ [['Leicht : facile','2 choix',false],['Schwer : difficile','4 choix et plus de pièges',true]].forEach(([nom,detail,dur])=>{
+  const r=lireRecord(dur);
+  const b=bouton('',()=>partie(s,serieDe(dur),true,dur));b.className='niveau';
+  b.innerHTML=`<strong>${nom}</strong><span>${detail}</span>`+(r?`<span>🏆 Record : ${r}/10</span>`:'');
+  s.append(b);
+ });
+}
+function partie(s,liste,officielle,dur){
+ const total=liste.length,resultats=[],erreurs=[];let i=0,serie=0;
+ const pastilles=()=>'<div class="points">'+liste.map((x,j)=>{const r=resultats[j];return `<span class="${r===undefined?(j===i?'actuel':''):r?'bon':'faux'}">${r===undefined?j+1:r?'✓':'✗'}</span>`}).join('')+'</div>';
+ (function suivant(){
+  if(i===total)return bilan();
+  s.innerHTML=pastilles()+`<p class="serie">${serie>1?`🔥 ${serie} d’affilée`:`${i+1}/${total}`}</p>`;
+  fondu(s);
+  question(s,liste[i],(ok,juste,paire)=>{if(!ok)erreurs.push([paire,juste]);i++;suivant()},ok=>{
+   resultats[i]=ok;serie=ok?serie+1:0;
+   s.querySelector('.points').outerHTML=pastilles();
+   s.querySelector('.retour').textContent=ok?melange(['Super!','Genau!','Prima!','Richtig!'])[0]:'Fast! Réécoutez, puis continuez.';
+   if(serie>1)s.querySelector('.serie').textContent=`🔥 ${serie} d’affilée`;
+  });
+ })();
+ function bilan(){
+  const score=resultats.filter(Boolean).length,part=score/total;
+  const nouveau=officielle&&score>lireRecord(dur);
+  if(nouveau)try{localStorage.setItem(CLE+(dur?'-difficile':''),score)}catch(e){}
+  s.innerHTML=`<div class="grand etoiles">${'★'.repeat(part>=.9?3:part>=.7?2:part>=.5?1:0)||'💪'}</div><h2>${score}/${total} : ${part>=.9?'Ausgezeichnet!':part>=.7?'Sehr gut!':part>=.5?'Gut!':'Weiter üben!'}</h2>`+(nouveau?'<p>🏆 Nouveau record !</p>':'');
+  if(erreurs.length){
+   s.insertAdjacentHTML('beforeend','<h3>À réécouter</h3><p>Le mot encadré était le bon.</p>');
+   erreurs.forEach(([paire,juste])=>{
+    const d=document.createElement('div');d.className='paire';
+    (PM[paire.join(' ')]||paire).forEach(m=>d.append(audio(m,net(m)===juste?'cible':'autre')));s.append(d);
+   });
+   const r=bouton('Retravailler mes erreurs',()=>partie(s,melange(erreurs.map(e=>e[0])),false,dur));r.className='suite';s.append(r);
+  }
+  const n=bouton('Nouvelle série',()=>partie(s,serieDe(dur),true,dur));n.className='suite principal';s.append(n);
+  const c=bouton('Changer de niveau',()=>ouvrir('training'));c.className='suite';s.append(c);
+  s.scrollIntoView();fondu(s);
+ }
+}
+const vues={lernen,ueben,training};
+function ouvrir(n){
+ if(window.speechSynthesis)speechSynthesis.cancel();
+ app.innerHTML='';$('marque').hidden=n!=='lernen';vues[n]();fondu(app);
+ document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.tab===n));
+}
+document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>ouvrir(b.dataset.tab));
+function bascule(id,fn){$(id).onclick=()=>{const on=$(id).getAttribute('aria-pressed')!=='true';$(id).setAttribute('aria-pressed',on);if(fn)fn(on)}}
+interrupteur('marque',on=>document.body.classList.toggle('sans',!on));
+function interrupteur(id,fn){$(id).onclick=()=>{const on=$(id).getAttribute('aria-checked')!=='true';$(id).setAttribute('aria-checked',on);fn(on)}}
+interrupteur('sombre',on=>document.documentElement.classList.toggle('dark',on));
+if(matchMedia('(prefers-color-scheme: dark)').matches)$('sombre').click();
+ouvrir('lernen');
+</script>
+</body>
+</html>
